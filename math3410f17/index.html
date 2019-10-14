@@ -1,0 +1,371 @@
+<html>
+<head>
+<script type="text/javascript">
+onload = function(){
+    document.getElementById("lastModified").innerHTML = "Page last changed " + document.lastModified.split(" ")[0];
+}
+</script>
+<SCRIPT language="JavaScript1.2" src="main.js" type="text/javascript"></SCRIPT>   
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Math 3410, Sections 001 and 002 - Elementary Differential Equations, Fall 2017</title>
+</head>
+<style type="text/css">
+body {
+line-height:1.3em;
+}
+</style>
+<body>
+<div style="float:left;padding-left:40pt;padding-top:60pt;">
+[<b><a href="../index.html">Back to Previous Page</a></b>]
+<h1>Differential Equations for Applications</h1>
+
+Math 3410, Sections 001 and 002 - Elementary Differential Equations, Fall 2017 [<a href="3410f17s.pdf">Course Syllabus</a>]
+<br>
+<br>
+<b>Lectures:</b> MWF 09:05 - 09:55 at LH 201. 
+<br> <b>Office hours:</b> Monday 12:00 - 13:30, Wednesday 12:30 - 14:00 at MONT 304. 
+
+<ul>
+<li><h3>Lecture Notes</h3></li>
+<ul style="list-style-type:disc;">
+<li> <a href="Note1.pdf">Note 1</a> -- <a href="Note2.pdf">Note 2</a> -- <a href="Note3.pdf">Note 3</a> -- <a href="Note4.pdf">Note 4</a> -- <a href="Note5.pdf">Note 5</a>(We skipped the applications and we will come back to that later).</li>
+<li> <a href="Note6.pdf">Note 6</a> is about Autonomous Equations and Stability of Equilibrium Solutions.</li>
+<li> <a href="Note7.pdf">Note 7</a> is about Secon Order Linear equations and Laplace Transform.</li>
+<li><a href="Note8.pdf">Note 8</a> is about Power series solutions of DEs.</li>
+<li><a href="Note9.pdf">Note 9</a> is about Ordinary and Regular points and Method of Frobenious.</li>
+<li><a href="Note10.pdf">Note 10</a> is about Bessel Equation.</li>
+<li><a href="Note11.pdf">Note 11</a> is about Boundary Value Problems and Fourier Series.</li>
+<li><a href="Note12.pdf">Note 12</a> is about Partial Differential Equations.</li>
+<li><a href="Note13.pdf">Note 13</a> is about Heat Equation.</li>
+<li><a href="Note14.pdf">Note 14</a> is about Wave Equation.</li>
+
+<li> Current Lecture Note --> <a href="Note15.pdf">Note 15</a> is about Laplace Equation.</li>
+
+</ul>
+
+<li><h3>Quizzes</h3></li>
+<ul style="list-style-type:disc;">
+<li>Solution to <a href="Q1S.pdf">Quiz 1</a>.</li>
+<li>Solution to <a href="PE1S.pdf">Practice Exam 1 - Quiz 2</a>.</li>
+<li>Solution to <a href="Q3S.pdf">Quiz 3</a>.</li>
+<li>Solution to <a href="Q4S.pdf">Quiz 4</a>.</li>
+</ul>
+
+<li><h3>Exams</h3></li>
+<ul style="list-style-type:disc;">
+<li>Solution to <a href="SE1.pdf">Exam 1</a>.</li>
+<li>Solution to <a href="SE2.pdf">Exam 2</a>.</li>
+<li>Solution to <a href="SFE.pdf">Final Exam</a>.</li>
+
+</ul>
+
+<li><h3>Supplementary Problems and Practice Exams</h3></li>
+<ul style="list-style-type:disc;">
+<li> <a href="SP1.pdf">Supplementary Problems for Exam 1.</a> There is a typo on Question 3. Now it is corrected. Let me know if there are more typos.
+</li>
+<li> <a href="PE2.pdf">Practice Exam 2</a> and <a href="SPE2.pdf">Solution to Practice Exam 2</a>.---- <a href="OE2.pdf">Old Exam 2</a>(Given in fall 2016) and <a href="SOE2.pdf"> Solution to Old Exam 2</a>.</li>
+
+<li> <a href="PFE.pdf">Practice Final Exam</a> | Solution to <a href="SPFE.pdf">Practice Final Exam</a>.---- <a href="OFE.pdf">Old Final Exam</a>(Given in fall 2016) | Solution to <a href="SOFE.pdf">Old Final Exam</a>.</li>
+
+
+</ul>
+
+<li><h3>Homework</h3></li>
+<ul style="list-style-type:circle;">
+<li><h4>HW1 - Due on <font color="red"> Friday, September 8 by the class</font> | <a href="SHW1.pdf"><font color="purple"> Solution to selected problems (PDF)</font></a></h4></li>
+<ul style="list-style-type:square;">
+<li>Problem 1: Show that $e^{2x}+e^{2y}=1$ is an implicit solution to the DE <font color="red"> $e^{x-y}+e^{y-x} \frac{dy}{dx}=0$</font>.</li>
+<li>Problem 2:  Find a 1-parameter family of solutions of the DE $y'=y$ and the particular solution for which $y(3)=1$.</li>
+<li>Problem 3: Construct a direction field for the differential equation $y'=2x$.</li>
+<li>Problem 4: Find a particular solution to the DE $y'=e^{x+y}$ with the initial value $y(0)=0$.
+</ul>
+
+
+<li><h4>HW2 - Due on <font color="red"> Friday, September 15 by the class</font> | <a href="SHW2.pdf"><font color="purple"> Solution to selected problems (PDF)</font></a></li>
+<ul style="list-style-type:square;">
+<li>Problem 1: Check that if the differential equation is exact $(e^{x}\sin y+e^{-y})dx - (xe^{-y} - e^{x} \cos y) dy= 0$. 
+If it is exact then solve the differential equation. </li>
+<li>Problem 2: Check that if the differential equation is exact $e^{x}(x+1) dx +(ye^y - xe^x)dy= 0$. 
+If it is exact then solve the differential equation. </li>
+<li>Problem 3: Let $P(x)=\int p(x) dx$. Show that $e^{P(X)}$ is an integrating factor for the DE <br>
+\[
+y'+p(x) y=q(x).
+\]
+</li>
+<li>Problem 4: Suppose that $a,b,c,e$ are constants such that $ae-bc\neq 0$. Let $m$ and $n$ be arbitrary real numbers. Show that 
+\[
+(ax^{m}y+by^{n+1})dx + (cx^{m+1}+exy^{n})dy=0
+\]
+has an integrating factor $\mu(x,y)=x^{\alpha}y^{\beta}$ for some $\alpha$ and $\beta$.<br>
+</li>
+</ul>
+
+<li><h4>HW3 - Due on  <strike>Friday, September 22</strike> <font color="red"> Monday, September 25 by the class</font> | <a href="SHW3.pdf"><font color="purple"> Solution to selected problems (PDF)</font></a></li>
+</h4></li>
+<ul style="list-style-type:square;">
+<li> Problem 1: Find the orthogonal trajectories of the family of circles centered on $x$-axis and passing through the origin.</li>
+<li> Problem 2: Find the orthogonal trajectories of the family of curves having equation $e^x \cos(y)=k$.</li>
+<li> Problem 3: Find the general solution of the Bernoulli equation $xy'+y+x^2y^2e^x=0$.(You may need to rewrite the equation!).</li>
+<li> Problem 4: Find the general solution of the Bernoulli equation $x^2y'+2y=2e^{\frac{1}{x}}y^{\frac{1}{2}}$.</li>
+<li> Problem 5: Find the general solution of the Ricatti equation $y'=1+\frac{y}{x}-\frac{y^2}{x^2}$ with given particular solution $y_1(x)=x$.</li>
+<li> Problem 6: Find the general solution of the Ricatti equation $y'=y^2+2xy+(x^2-1)$ with given particular solution $y_1(x)=-x$.</li>
+
+</ul>
+
+<li><h4>HW4 - Due on <font color="red"> Wednesday, October 4 by the class</font> Problems are from the <a href="SP1.pdf">Supplementary Problems for Exam 1.</a> Here is 
+<a href="SHW4.pdf"><font color="purple"> Solution to selected problems (PDF)</font></a></li>
+</h4></li>
+<ul style="list-style-type:square;">
+<li> 1. in Question 23.  </li>
+<li> 2., 3. 4. in Question 24. </li>
+<li> 3. in Question 25. </li>
+<li> Question 26. </li>
+<li> Question 28. </li>
+
+</ul>
+
+
+<li><h4>HW5 - Due on <strike>Wednesday, October 18</strike> <font color="red">Friday, October 20 by the class</font> | <a href="SHW5.pdf"><font color="purple"> Solution to selected problems (PDF)</font></a></li>
+</h4></li>
+<ul st</li>
+<ul style="list-style-type:square;">
+<li> Find a power series solution $y(x)$ around the point 
+$x_0=0$ to the differential equation 
+\[
+y''+y=0.
+\]
+Verify that the power series solution you found 
+has the form 
+\[
+y(x)=a_0\cos(x)+a_1\sin(x). 
+\]
+</li>
+<li> By using the second method find at least first 
+four terms of the power series solution $y(x)$ around 
+the point $x_0=0$ to the differential equation 
+\[
+y''=xy-(y')^2
+\]
+with $y(0)=2$ and $y'(0)=1$ (assume that the solution is analytic around $x_0=0$). </li>
+<li> Consider the Rayleigh's equation
+\[
+my''+ky = ay'-b(y')^{3}
+\]
+which models the oscillation of a clarinet reed. 
+Using the second method
+find the first four terms of the power 
+series solution $y(x)$ around $x_0=0$ with 
+$m=k=a=1$ and $b=1/3$ with the initial conditions 
+$y(0)=0$ and $y'(0)=1$.   
+Write the first four terms of the solution $y(x)$.  </li>
+<li> Consider the following differential equation
+\[
+y''+4 (y^{2}+1)y'+xy=0.
+\]
+Use the second method to find first 
+four terms of the power series solution 
+\[
+y(x)=\sum\limits_{n=0}^{\infty} a_n x^n
+\]
+around $x_0=0$ with the initial conditions 
+$y(0)=0$ and $y'(0)=1$.  </li>
+
+</ul>
+
+
+
+
+<li><h4>HW6 - Due on Friday, October 27 by the class</font> | <a href="SHW6.pdf"><font color="purple"> Solution to selected problems (PDF)</font></a></li>
+</h4></li>
+<ul style="list-style-type:square;">
+<li>For the following differential equation
+\[
+4xy''+2y'+y=0
+\]
+<ul style="list-style-type:disc;">
+<li>Find and classify all points as ordinary, regular singular, or irregular singular points.</li>
+<li>For each of the regular point(s), find the corresponding indicial equation and find roots $r_1$ and $r_2$ of the indicial equation (Yes, there are two roots and the difference is not integer).
+<li>Find the corresponding recurrence relations for each of the roots $r_1, r_2$.</li>
+<li>Find the corresponding power series solutions $y_1$ and $y_2$.</li>
+</ul>
+</li>
+<br>
+<li>For the following differential equation
+\[
+xy''+y'-y=0
+\]
+<ul style="list-style-type:disc;">
+<li>Find and classify all points as ordinary, regular singular, or irregular singular points.</li>
+<li>For each of the regular point(s), find the corresponding indicial equation and find the double root $r_1$of the indicial equation (Yes there is one double root).
+<li>Find the corresponding recurrence relation for the root $r_1$.</li>
+<li>Find the corresponding power series solution $y_1$.</li>
+<li>Use the method of Frobenious and write down the general form of the second solution $y_2$.</li>
+<li>Find at least first two terms of the second solution $b_0$ and $b_1$.</li>
+</ul>
+</li>
+<br>
+<li>For the following differential equation
+\[
+xy''+y=0
+\]
+<ul style="list-style-type:disc;">
+<li>Find and classify all points as ordinary, regular singular, or irregular singular points.</li>
+<li>For each of the regular point(s), find the corresponding indicial equation and find the roots $r_1$ and $r_2$ of the indicial equation (Yes there are two roots with $r_1-r_2$ is integer).
+<li>Find the corresponding recurrence relation for the roots $r_1$ and $r_2$.</li>
+<li>Find the corresponding power series solution for $y_1$.</li>
+<li>Use the method of Frobenious and write down the general form of the second solution $y_2$.</li>
+<li>Find at least first two terms of the second solution $b_0$ and $b_1$.</li>
+</ul>
+</li>
+</ul>
+
+
+<li><h4>HW7 - Due on Monday, November 13 by the class | <a href="SHW7.pdf"><font color="purple"> Solution to selected problems (PDF)</font></a></h4></li>
+<ul style="list-style-type:square;">
+<li> Let $f(x)$ be given as
+\[
+f(x)=\left\{
+\begin{array}{ll}
+0 &-\pi< x < 0, \\
+x & 0< x< \pi.
+\end{array}
+\right. 
+\quad f(x)=f(x+2\pi).
+\]
+<ul style="list-style-type:disc;">
+<li>Find the Fourier series $F(x)$ of $f(x)$. </li>
+<li>Using the first part verify that
+\[
+\frac{\pi}{4}=\sum\limits_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)}. 
+\]
+</li>
+<li>Using the first part verify also that
+\[
+\frac{\pi^2}{8}=\sum\limits_{n=0}^{\infty} \frac{1}{(2n+1)^{2}}. 
+\]
+</li>
+</ul>
+</li>
+<br>
+<li> Let $f(x)$ be given as
+\[
+f(x)=\left\{
+\begin{array}{ll}
+x &0\leq x\leq \frac{1}{2}\pi, \\
+\pi-x & \frac{1}{2}\pi\leq x\leq \pi.
+\end{array}
+\right.
+\]
+<ul style="list-style-type:disc;">
+
+<li> Extend $f(x)$ into an odd periodic function with period of $2\pi$ and find its Fourier series $F(x)$. </li>
+<li> Extend $f(x)$ into an even periodic function with period of $2\pi$ and find its Fourier series $F(x)$. </li>
+<li> Using either the first part or the second part verify that
+\[
+\frac{\pi^{2}}{8}=\sum\limits_{n=1}^{\infty} \frac{1}{(2n-1)^{2}}. 
+\]
+</li>
+</ul>
+</li>
+</ul>
+
+
+<li><h4>HW8 - Due on <font color="red"> Wednesday, November 29 by the class </font><a href="SHW8.pdf"> <font color="purple"> Solution to selected problems (PDF)</font></a></h4></li>
+<ul style="list-style-type:square;">
+<li> 
+Problem 1: Consider the following Heat conduction problem
+
+\[
+\left\{
+\begin{array}{l}
+u_{xx}=u_{t}, \quad 0 < x < 2, \quad  t > 0,\\
+u(0,t)=0 \quad \mbox{and} \quad u(2,t)=0,\\
+u(x,0)=3\sin(\pi x)-4\sin(\frac{3\pi x}{2}).
+\end{array}
+\right.
+\]
+
+<ul style="list-style-type:disc;">
+<li> By considering separation of variables $u(x,t)=X(x)T(t)$, rewrite the partial differential equation 
+<br> in terms of two ordinary differential equations in $X$ and $T$ (take arbitrary constant as $-\lambda$).</li>
+<li> Rewrite the boundary values in terms of $X$ and $T$.</li>
+<li> Now choose the boundary values which will not give a non-trivial solution and write the ordinary differential equation corresponding to $X$.</li>
+<li> Solve the two-point boundary value problem corresponding to $X$. Find all eigenvalues $\lambda_n$ and eigenfunctions $X_n$.</li>
+<li> For each eigenvalue $\lambda_n$ you found, rewrite and solve the ordinary differential equation corresponding to $T_n$.</li>
+<li> Now write general solution for each $n$, $u_n(x,t)=X_n(x) T_n(t)$ and find the general solution $u(x,t)=\sum u_n(x,t)$.</li>
+<li> Using the given initial value and the general solution you found, find the particular solution. </li>
+</ul>
+</li>
+<br>
+
+<li> 
+Problem 2: Consider the following Heat conduction problem
+
+\[
+\left\{
+\begin{array}{l}
+9u_{xx}=u_{t}, \quad 0 < x < 3, \quad  t > 0,\\
+u_{x}(0,t)=0 \quad \mbox{and} \quad u_{x}(3,t)=0,\\
+u(x,0)=2\cos(\frac{\pi x}{3}) -4 \cos(\frac{5\pi x}{3}).
+\end{array}
+\right.
+\]
+
+<ul style="list-style-type:disc;">
+<li> By considering separation of variables $u(x,t)=X(x)T(t)$, rewrite the partial differential equation<br> in terms of two ordinary differential equations in $X$ and $T$ (take arbitrary constant as $-\lambda$).</li>
+<li> Rewrite the boundary values in terms of $X$ and $T$.</li>
+<li> Now choose the boundary values which will not give a non-trivial solution and write the ordinary differential equation corresponding to $X$.</li>
+<li> Solve the two-point boundary value problem corresponding to $X$. Find all eigenvalues $\lambda_n$ and eigenfunctions $X_n$.</li>
+<li> For each eigenvalue $\lambda_n$ you found, rewrite and solve the ordinary differential equation corresponding to $T_n$.</li>
+<li> Now write general solution for each $n$, $u_n(x,t)=X_n(x) T_n(t)$ and find the general solution $u(x,t)=\sum u_n(x,t)$.</li>
+<li> Using the given initial value and the general solution you found in, find the particular solution. </li>
+</ul>
+</li>
+</ul>
+
+
+<li><h4>HW9 - Due on <strike>Wednesday, December 6</strike>  <font color="red"> Friday, December 8 by the class</font> <a href="SHW9.pdf"> <font color="purple"> Solution to selected problems (PDF)</font></a> </h4></li>
+<ul style="list-style-type:square;">
+<li> 
+Problem: Consider the following Wave equation which describes the displacement $u(x, t)$ of a piece of flexible string with the initial boundary
+value problem
+\[
+\left\{
+\begin{array}{l}
+25u_{xx}=u_{tt}, \quad 0 < x < 5, \quad t > 0,\\
+u(0,t)=0 \quad \mbox{and} \quad u(5,t)=0,\\
+u(x,0)=0 \quad \mbox{and} \quad u_{t}(x,0)=3\sin(\frac{3\pi x}{5})-10\sin(\frac{4\pi x}{5}).
+\end{array}
+\right.
+\]
+
+<ul style="list-style-type:disc;">
+<li> By considering separation of variables $u(x,t)=X(x)T(t)$, rewrite the partial differential equation<br> 
+in terms of two ordinary differential equations in $X$ and $T$.</li>
+<li> Rewrite the boundary values in terms of $X$ and $T$.</li>
+<li> Now choose the boundary values which will not give a non-trivial solution and then rewrite the ordinary differential equation corresponding to $X$.</li>
+<li> Solve the two-point boundary value problem corresponding to $X$ you found. Find all eigenvalues $\lambda_n$ and eigen functions $X_n$</li>
+<li> For each eaigenvalue $\lambda_n$ you found, solve the initial value problem corresponding to $T_n$.</li>
+<li> Now write general solution for each $n$, $u_n(x,t)=X_n(x) T_n(t)$ and find the general solution $u(x,t)=\sum u_n(x,t)$.</li>
+<li> Using the given initial values, find the particular solution.</li>
+</ul>
+</li>
+</ul>
+
+
+
+</ul>
+<li><h3>Announcements and Grades</h3></li>
+<ul style="list-style-type:disc;">
+<li>Please log-on <a href="https://lms.uconn.edu/">HuskyCT</a> for the course announcements and grades. </li>
+</ul>
+</ul>
+<i><span id="lastModified"></span></i>
+</div>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<html>
+<head>
+<script type="text/javascript">
+onload = function(){
+    document.getElementById("lastModified").innerHTML = "Page last changed " + document.lastModified.split(" ")[0];
+}
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Math 3150, Section 001 - Analsysi I, Spring 2019</title>
+</head>
+<style type="text/css">
+body {
+font-family: arial, sans-serif;
+line-height:1.3em;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+<div style="float:left;padding-left:40pt;padding-top:60pt;">
+[<b><a href="../index.html">Back to Previous Page</a></b>]
+<h1>Analysis I</h1>
+
+Math 3150, Section 001 - Analysis I, Spring 2019 [<a href="3150s19.pdf">Course Syllabus</a>]
+<br>
+<br>
+<b>Lectures:</b> MWF 11:15 - 12:05 at MONT 314
+<br> <b>Office hours:</b> MW 1pm-2pm at MONT 304
+<br> <b>Required Text Book:</b> Elementary Analysis: The Theory of Calculus 
+by Kenneth A. Ross. ISBN 978-1-4614-6270-5, Springer; 2nd ed. 2013 edition (April 17, 2013).
+<br>
+<b> Exam Dates</b>: <br>
+Exam 1: March 1, Friday. <br>
+Exam 2: April 5, Friday. <br>
+Final Exam: May 8, Wednesday. 
+<br>
+<b> Grading policy</b>: Quiz: %20, Homework: %10,  1st Exam: %20, 2nd Exam: %20, Final Exam:%30.
+
+<ul>
+
+<li><h3>Exams</h3></li>
+<ul style="list-style-type:square;">
+<li><a href="E1.pdf">Exam 1 and its solution.</a></li>
+<li><a href="E2.pdf">Exam 2 and its solution.</a></li>
+<li><a href="FE.pdf">Final Exam and its solution.</a></li>
+
+</ul>
+
+
+
+
+<li><h3>Homework</h3></li>
+<ul style="list-style-type:square;">
+<li>HW1: Assigned problems for sections 1.1 to 1.5. Due date: Monday, February 4 before the class.</li>
+<li>HW2: Assigned problems for sections from 2.7 to 2.9. Due date: <strike>Friday, February 8</strike> <font color="red">Monday,  February 11</font> before the class.</li>
+<li>HW3: Assigned problems for 2.9 (if you did not sovle in HW2) and problems <a href="oldexam1.pdf">in this old  exam</a>. 
+Due date: Monday, February 18 before the class.</li>
+<li>HW4: Assigned problems for 2.10, <strike>2.11</strike>, and problems <a href="oldexam2.pdf">in this old exam</a>. 
+Due date: Monday, February 25 before the class.</li>
+<li> HW5: Assigned Problems for 2.11 and 2.12. Due date: Monday, March 11.</li>
+<li> HW6: Assigned Problems for 3.17, 3.18, 3.19. Due date: Wednesday, March 27.</li>
+<li> HW7: Assigned Problems for 3.20 and problems  in these two old exams <a href="OE21.pdf">Old Exam 1</a> [You can skip problem 4] 
+and <a href="OE22.pdf"> Old Exam 2</a> [You can skip problem 5]. Due date: Monday, April 1.</li>
+<li> HW8: Assigned Problems for 5.28, 5.29, and 5.30. Due date: Monday, April 15.</li>
+<li> HW9: Assigned Problems for 6.32 and 6.33. Due date: <strike>Monday</strike> <font color="red">Wednesday, April 24</font>.</li>
+<li> HW10: Assigned Problems for 6.34 and old <a href="oldfinal1.pdf">final exam 1</a> and <a href="oldfinal2.pdf">final exam 2</a>. Due date: <strike>Monday</strike> <font color="red">Wednesday, May 1</font>.</li>
+
+
+
+
+<ul style="list-style-type:disc;">
+</ul>
+
+</ul>
+
+<li><h3>Quizzes</h3></li>
+
+<li><h3>Lecture and Assignment Schedule</h3></li>
+<table>
+  <tr>
+    <th>Section</th>
+    <th>Covered on</th>
+    <th>Topics</th>
+    <th>Assigned Problems</th>
+  </tr>
+  <tr>
+    <td>1.1</td>
+    <td>01/23</td>
+    <td>The Set $\mathbb{N}$ of Natural Numbers</td>
+    <td>Page 5, Exercises 1.4, 1.7, 1.11.</td>
+  </tr>
+  <tr>
+    <td>1.2</td>
+    <td>01/23 and 01/25</td>
+    <td>The Set $\mathbb{Q}$ of Rational Numbers</td>
+    <td>Page 13, Exercises 2.3, 2.8.</td>
+  </tr>
+  <tr>
+    <td>1.3</td>
+     <td>01/25</td>
+    <td>The Set $\mathbb{R}$ of Real Numbers</td>
+    <td>Page 19, Exercises 3.6, 3.7.</td>
+  </tr>
+  <tr>
+  <td>1.4</td>
+     <td>01/30</td>
+   <td>The Completeness Axiom </td>
+    <td>Pages 27-28, Exercises 4.1,4.3, 4.14.</td>
+  </tr>
+  <tr>
+    <td>1.5</td>
+    <td>02/01</td>
+    <td>The Symbols $+\infty$ and $-\infty$</td>
+    <td>Page 30, Exercise 5.6.</td>
+  </tr>
+ 
+    <tr>
+    <td>2.7 and 2.8</td>
+    <td>02/01 and 02/04 and 02/06</td>
+    <td>Limits of Sequences and A discussion about Proofs</td>
+    <td>Page 44, Exercises 8.2 (b) (d) (e), 8.4, 8.6.</td>
+  </tr>
+   <tr>
+    <td>2.9</td>
+    <td>02/06 and 02/08 and 02/11 and 02/13</td>
+    <td>Limit theorems for sequences</td>
+    <td>Page 54, Exercises 9.1 (a) (c), 9.2 (a) (b), 9.3, 9.4, 9.5.</td>
+  </tr>
+  
+    <tr>
+    <td>2.10</td>
+    <td>02/15 and 02/18 and 02/20</td>
+    <td>Monotone sequences and Cauchy sequences</td>
+    <td>Pages 64-65-66, Exercises 10.1 (a) (c) (e), 10.2, 10.4, 10.6 (a) (b), 10.7, 10.10, 10.12.</td>
+  </tr>
+      <tr>
+    <td>2.11</td>
+    <td>02/22 and 02/25</td>
+    <td>Subsequences</td>
+    <td>Pages 76-77-78, Exercises 11.4, 11.10, 11.11</td>
+    
+     </tr>
+      <tr> 
+    
+        <td>Exam 1 Review</td>
+    <td>02/27</td>
+    <td></td>
+    <td>We will talk about problems from the old exams</td>
+   
+  </tr>
+  
+    <tr>
+  
+   <td>Exam 1</td>
+    <td>03/01</td>
+    <td></td>
+    <td>Exam 1 Covers 1.1-1.5 and 2.7-2.11. </td>
+  
+  
+    </tr>
+    
+        <tr>
+  
+   <td>2.11 and 2.12</td>
+    <td>03/06</td>
+    <td>Subsequences and lim sup's and lim inf's</td>
+    <td>Page 82, Exercise 12.3</td>
+    </tr>
+            <tr>
+      <td>3.17</td>
+    <td>03/08</td>
+    <td>Continuous functions</td>
+    <td>Pages 130-131-132, Exercises 17.2, 17.9, 17.12, 17.13.</td>
+    </tr> 
+    
+            <tr>
+          <td>3.18</td>
+    <td>03/11</td>
+    <td>Properties of continuous functions</td>
+    <td>Page 139, Exercises 18.4, 18.5, 18.6, 18.8, 18,9, 18.10.</td>
+    </tr> 
+            <tr>
+              <td>3.19</td>
+    <td>03/13 and 03/15</td>
+    <td>Uniform continuity</td>
+    <td>Pages 151-152, Exercises 19.2 (b), 19.5 (d) (e) (f), 19.8, 19.9</td>
+    </tr> 
+               <tr>
+              <td>3.20</td>
+    <td>03/27 and 03/29 and 04/01</td>
+    <td>Limits of Functions</td>
+    <td>Pages 162-163, Exercises 20.1, 20.2, 20.5, 20.6, 20.11, 20.12</td>
+    </tr> 
+               <tr>
+            <td>Exam 2 Review</td>
+    <td>04/03</td>
+    <td></td>
+    <td>We will talk about problems from the old exams</td>
+   
+  </tr>
+  
+    <tr>
+  
+   <td>Exam 2</td>
+    <td>04/05</td>
+    <td></td>
+    <td>Exam 2 Covers 2.11-2.12 and 3.17, 3.18. 3.19, and 3.20 </td>
+    
+       <tr>
+              <td>5.28</td>
+    <td>04/08</td>
+    <td>Basic Properties of the Derivative</td>
+    <td>Pages 230-231-232, Exercises 28.1 (a), 28.2 (a), 28.3(a), 28.7(a)(b)(c)(d), 28.14(a)(b), 28.16.</td>
+    </tr> 
+    
+       <tr>
+     <td>5.29</td>
+    <td>04/10</td>
+    <td>The Mean Value Theorem</td>
+    <td>Pages 239-240, Exercises 29.1 (a)(c), 29.3, 29.4, 29.5, 29.7, 29.9.</td>
+    </tr> 
+    
+      <tr>
+     <td>5.30</td>
+    <td>04/12</td>
+    <td>L'Hospital's Rule</td>
+    <td>Pages 248, Exercises 30.1, 30.3, 30.5.</td>
+    </tr> 
+   
+   
+         <tr>
+     <td>6.32</td>
+    <td>04/15 and 04/17 and 04/19</td>
+    <td>The Riemann Integral</td>
+    <td>Page 279, Exercises 32,1, 32.2, 32.3</td>
+    </tr> 
+   
+  
+          <tr>
+     <td>6.33</td>
+    <td>04/22 and 04/24</td>
+    <td>Properties of the Riemann Integral</td>
+    <td>Page 289, Exercises 33.4, 33.7, 33.8</td>
+    </tr>   
+    
+        <tr>
+     <td>6.34</td>
+    <td>04/26 and 04/29</td>
+    <td>Fundamental Theorem of Calculus</td>
+    <td>Page 296, Exercises 34.2, 34.3</td>
+    </tr> 
+    
+     <tr>
+            <td>Final Exam Review</td>
+    <td>05/01 and 05/03</td>
+    <td></td>
+    <td>We will talk about problems from the old final exams</td>
+   
+  </tr>
+  
+ 
+    
+</table>
+
+<br>
+<li><h3>Important Links</h3>
+<ul style="list-style-type:square;">
+<li>Please log-on <a href="https://lms.uconn.edu/">HuskyCT</a> for the course announcements and grades. </li>
+<li> Academic Calendar for this semester <a href="https://registrar.uconn.edu/academic-calendar/fall-2018/">https://registrar.uconn.edu/academic-calendar/fall-2018/</a>.</li>
+<li> Exam rescheduling <a href="https://guide.uconn.edu/student-interactions/rescheduling-exams/">https://guide.uconn.edu/student-interactions/rescheduling-exams/</a>.</li>
+<li>Academic Integrity Policy <a href="https://community.uconn.edu/academic-integrity-faculty-faq/">https://community.uconn.edu/academic-integrity-faculty-faq/</a>.</li>
+</ul>
+</ul>
+<i><span id="lastModified"></span></i>
+</div>
+</body>
+</html>

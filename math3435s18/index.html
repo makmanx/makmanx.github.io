@@ -1,0 +1,273 @@
+<html>
+<head>
+<script type="text/javascript">
+onload = function(){
+    document.getElementById("lastModified").innerHTML = "Page last changed " + document.lastModified.split(" ")[0];
+}
+</script>
+<SCRIPT language="JavaScript1.2" src="main.js" type="text/javascript"></SCRIPT>   
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Math 3435, Section 001 - Partial Differential Equations, Spring 2018</title>
+</head>
+<style type="text/css">
+body {
+line-height:1.3em;
+}
+</style>
+<body>
+<div style="float:left;padding-left:40pt;padding-top:60pt;">
+[<b><a href="../index.html">Back to Previous Page</a></b>]
+<h1>Partial Differential Equations</h1>
+
+Math 3435, Section 001 - Partial Differential Equations, Spring 2018 [<a href="3435s17.pdf">Course Syllabus</a>]
+<br>
+<br>
+<b>Lectures:</b> MWF 12:20 - 13:10 at MONT 421. 
+<br> <b>Office hours:</b> <font color="red">Monday at 1:15pm-2:15pm </font> and Wednesday 2pm-3pm at MONT 304. 
+<br> <b>Required Text Book:</b> Basic Partial Differential Equations by David D. Bleecker and  George Csordas. ISBN 1-57146-036-5, 2003, International Press of Boston, Inc.
+<br>
+
+<ul>
+
+<li><h3>We will cover following chapters from the text book</h3></li>
+<ul style="list-style-type:square;">
+
+<li>Introduction to PDEs (Chapter 1)</li> 
+Please read Section 1.1 from the book. We will cover Section 1.2 and Section 1.3. 
+<li>First Order PDEs (Chapter 2)</li> 
+Section 2.1 and Section 2.2.
+<li>The Heat Equation (Chapter 3)</li>
+Section 3.1 and Section 3.2.
+<li>Fourier Series (Chapter 4)</li>
+Section 4.1, Section 4.2, and Section 4.3.
+<li>The Wave Equation (Chapter 5)</li>
+Section 5.1 and Section 5.2.
+<li>Laplace's Equation (Chapter 6)</li>
+Section 6.1, Section 6.2, and Section 6.3.
+<li>Fourier Transforms (Chapter 7) if time permits</li>
+Section 7.1, Section 7.2, Section 7.3, and Section 7.4.
+</ul>
+
+
+<li><h3>Exams</h3></li>
+<ul style="list-style-type:square;">
+<li><a href="PE1.pdf">Practice Exam 1</a> and <a href="SPE1.pdf">its solution.</a></li>
+<li><a href="E1.pdf">Exam 1</a> and <a href="SE1.pdf">its solution.</a></li>
+<li><a href="PE2.pdf">Practice Exam 2</a>  and <a href="SPE2.pdf">its solution.</a></li>
+<li><a href="E2.pdf">Exam 2</a> and <a href="SE2.pdf">its solution.</a></li>
+<li><a href="PFE.pdf">Practice Final Exam.</a></li>
+<li><a href="FE.pdf">Final Exam</a> and <a href="SFE.pdf">its solution.</a></li>
+
+
+</ul>
+<li><h3>In class presentations(Up to %5 Bonus) -- <font color="red"> on Saturday, March 24</font></h3></li>
+<ul style="list-style-type:square;">
+<li>Audrey:  Minimal Surface Equation - <a href="https://en.wikipedia.org/wiki/Minimal_surface">Wiki</a> - Audrey's talk <a href="talks/MSE.pdf">[PDF]</a></li>
+<li>Sheryar: Black-Scholes equation - <a href="https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation">Wiki</a> - Sheryar's talk <a href="talks/BSE.pdf">[PDF]</a></li>
+<li>Srini: Fisher KPP equation - <a href="https://en.wikipedia.org/wiki/Fisher%27s_equation">Wiki</a> - Srini's talk <a href="talks/FKPP.pdf">[PDF]</a></li>
+<li>Hunter: Poisson's equation - <a href="https://en.wikipedia.org/wiki/Poisson%27s_equation">Wiki</a> - Hunter's talk <a href="talks/PE.pdf">[PDF]</a></li>
+<li>Jhansi: Boussinesq equations - <a href="https://en.wikipedia.org/wiki/Boussinesq_approximation_(water_waves)">Wiki</a> - Jhansi's talk <a href="talks/BE.pdf">[PDF]</a></li>
+<li>Emily: Hunter-Saxton equation - <a href="https://en.wikipedia.org/wiki/Hunter%E2%80%93Saxton_equation">Wiki</a> - Emily's talk <a href="talks/HSE.pdf">[PDF]</a></li>
+<li>William T.: Diffusion equation - <a href="https://en.wikipedia.org/wiki/Diffusion_equation">Wiki</a> - William's talk <a href="talks/DE.pdf">[PDF]</a></li>
+<li>Krystian: Helmholtz equation - <a href="https://en.wikipedia.org/wiki/Helmholtz_equation">Wiki</a> - Krystian's talk <a href="talks/HE.pdf">[PDF]</a></li>
+<li>Rithvik:  Navier - Stokes equations - <a href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations">Wiki</a>- Rithvik's talk <a href="talks/NSE.pdf">[PDF]</a></li>
+<li>Richard:  Schr&ouml;dinger equation - <a href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation">Wiki</a></li>
+<li>William G.:  Maxwell's equations - <a href="https://en.wikipedia.org/wiki/Maxwell%27s_equations">Wiki</a>- William's talk <a href="talks/ME.pdf">[PDF]</a></li>
+<li>Zachariah:  Einstein field equations - <a href="https://en.wikipedia.org/wiki/Einstein_field_equations">Wiki</a>- Zachariah's talk <a href="talks/EFE.pdf">[PDF]</a></li>
+
+
+
+
+
+</ul>
+
+<li><h3>Homework</h3></li>
+
+<ul style="list-style-type:square;">
+<li><h4>HW1 - Due on <font color="red"> Friday, January 26 by the class</font> | <a href="HW1.pdf"><font color="red"> Solutions(PDF)</font></a></h4></li>
+<ul style="list-style-type:disc;">
+<li>Exercise 1.2, Page 39, Problems: 1b, 1d, 1f, 2c, 3d, 4d, 5c, 5d.</li>
+<li>Exercise 1.2, Page 40, Problems: 12, 13.</li>
+<li>Exercise 1.3, Page 53, Problems: 1b, 1c.</li>
+
+</ul>
+
+<li><h4>HW2 - Due on <font color="red"> Friday, February 2 by the class</font> | <a href="HW2.pdf"><font color="red"> Solutions(PDF)</font></a></h4></li>
+<ul style="list-style-type:disc;">
+<li>Exercise 1.3, Page 53, Problems: 2c, 2d.</li>
+<li>Exercise 1.3, Page 54, Problems: 3c, 3d.</li>
+<li>Exercise 1.3, Page 55, Problems: 8b, 9c.</li>
+
+
+</ul>
+
+
+<li><h4>HW3 - Due on <font color="red"> Friday, February 9 by the class</font> | <a href="HW3.pdf"><font color="red"> Solutions(PDF)</font></a></h4></li>
+<ul style="list-style-type:disc;">
+<li>Exercise 2.1, Page 71, Problems: 1c, 1d, 2a, 3.</li>
+<li>Exercise 2.1, Page 72, Problem: 8.</li>
+<li>Exercise 2.2, Page 90, Problems: 1a, 1d, 2a, 2d, <font color="red"><s>3a, 3d</s></font>.</li>
+
+
+</ul>
+
+
+<li><h4>HW4 - Due on <font color="red"> Friday, February 16 by the class</font> | <a href="HW4.pdf"><font color="red"> Solutions(PDF)</font></a></h4></li>
+<ul style="list-style-type:disc;">
+<li>Exercise 3.1, Page 136, Problems: 3b, 3d, 6b, 6d.</li>
+<li>Exercise 3.1, Page 137, Problem: 9.</li>
+<li> Solve the following Heat conduction problem
+
+\[
+\left\{
+\begin{array}{ll}
+9u_{xx}=u_{t}, \quad 0 < x < 3, \quad  t > 0,&\mbox{The Heat Equation},\\
+u_{x}(0,t)=0 \quad \mbox{and} \quad u_{x}(3,t)=0,& \mbox{Boundary conditions},\\
+u(x,0)=2\cos(\frac{\pi x}{3}) -4 \cos(\frac{5\pi x}{3}) &\mbox{Initial condition}.
+\end{array}
+\right.
+\]
+</li>
+</ul>
+Solve the given above problems following these steps. 
+<ul style="list-style-type:disc;">
+<li> By considering separation of variables $u(x,t)=X(x)T(t)$, rewrite the partial differential equation<br> 
+in terms of two ordinary differential equations in $X$ and $T$ (take arbitrary constant as $c$).</li>
+<li> Rewrite the boundary values in terms of $X$ and $T$.</li>
+<li> Now choose the boundary values which will not give a non-trivial solution and write the ordinary differential equation corresponding to $X$.</li>
+<li> By considering $c=0, \lambda^2=c>0, -\lambda^2=c<0$, solve the two-point boundary value problem corresponding to $X$. Find all eigenvalues $\lambda_n$ and eigenfunctions $X_n$.</li>
+<li> For each eigenvalue $\lambda_n$ you found, rewrite and solve the ordinary differential equation corresponding to $T_n$.</li>
+<li> Now write general solution for each $n$, $u_n(x,t)=X_n(x) T_n(t)$ and find the general solution $u(x,t)=\sum u_n(x,t)$.</li>
+<li> Using the given initial value and the general solution you found in, find the particular solution. </li>
+</ul>
+</li>
+
+<li><h4>HW5 - Due on <font color="red"> Friday, March 2 by the class</font>  | <a href="HW5.pdf"><font color="red"> Solutions(PDF)</font></a></h4></li>
+<ul style="list-style-type:disc;">
+<li>Exercise 3.3, Page 169, Problems: 3, 4.</li>
+<li>Exercise 3.4, Page 184, Problems: 3, <font color="red">4</font>(optional).</li>
+<li>Exercise 3.4, Page 185, Problems: 7, <font color="red">8</font>(optional).</li>
+
+
+</ul>
+
+<li><h4>HW6 - Due on <font color="red"> Friday, March 9 by the class</font>   | <a href="HW6.pdf"><font color="red"> Solutions(PDF)</font></a></h4></li>
+<ul style="list-style-type:disc;">
+<li>Exercise 4.1, Page 205, Problems: 2, 4.</li>
+<li> Let $f(x)$ be given as
+\[
+f(x)=\left\{
+\begin{array}{ll}
+0 &\mbox{when}\, \, -\pi\leq  x \leq 0, \\
+x & \mbox{when}\, \, 0\leq  x\leq \pi.
+\end{array}
+\right.
+\]
+<ul style="list-style-type:disc;">
+<li>Find the Fourier series $\mathfrak{F}(x)$ of $f(x)$ on $-\pi\leq x \leq \pi$. </li>
+<li>Using the first part verify that
+\[
+\frac{\pi}{4}=\sum\limits_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)}. 
+\]
+</li>
+<li>Using the first part verify also that
+\[
+\frac{\pi^2}{8}=\sum\limits_{n=0}^{\infty} \frac{1}{(2n+1)^{2}}. 
+\]
+<font color="red"><b>Hint: You can assume that $\mathfrak{F}(x)=f(x)$ when $-\pi < x < \pi$.</b></font>
+</li>
+</ul>
+<li> Let $f(x)$ be given as
+\[
+f(x)=\left\{
+\begin{array}{ll}
+0 &\mbox{when}\, \, -\pi\leq  x < 0, \\
+1 & \mbox{when}\, \, 0\leq  x<\pi.
+\end{array}
+\right.
+\]
+<ul style="list-style-type:disc;">
+<li>Find the Fourier series $\mathfrak{F}(x)$ of $f(x)$ on $-\pi\leq x \leq \pi$. </li>
+<li>Using the first part verify that
+\[
+\sum\limits_{n=1}^{\infty}\frac{(-1)^{n+1}}{2n-1}=\frac{\pi}{4}.
+\]
+<font color="red"><b>Hint: You can assume that $\mathfrak{F}(x)=f(x)$ when $-\pi < x < 0$ and $0 < x< \pi$</b></font>.
+</li>
+</ul>
+</ul>
+
+
+<li><h4>HW7 - Due on <font color="red"> Wednesday, April 4 by the class</font>   | <a href="HW7.pdf"><font color="red"> Solutions(PDF)</font></a></h4></li>
+<ul style="list-style-type:disc;">
+<li>Exercise 5.1, Page 295, Problems: 1a, 1c.</li>
+<li>Exercise 5.1, Page 296, Problem: 5a, <s>5b</s>.</li>
+<li>Exercise 5.1, Page 298, Problem: 9.</li>
+
+
+</ul>
+
+
+
+<li><h4>HW8 - Due on <font color="red"> Wednesday, April 11 by the class </font> | <a href="HW8.pdf"><font color="red"> Solutions(PDF)</font></a></h4></li>
+<ul style="list-style-type:disc;">
+<li>Exercise 5.2, Page 317, Problems: 1a, 1c, 1d, 1e</li>
+<li>Exercise 5.2, Page 318, Problem: 6, 7, .</li>
+<li>Exercise 5.3, Page 336, Problem: 2.</li>
+<li>Exercise 5.3, Page 337, Problem: 6,7,10.</li>
+
+
+
+</ul>
+
+
+
+<li><h4>HW9 - Due on <font color="red"> Wednesday, April 18 by the class</font> The solution is in Section 6.2 of the book.</h4></li>
+<ul style="list-style-type:disc;">
+<li>Exercise 6.1, Page 349, Problem: 3</li>
+</ul>
+
+
+
+<li><h4>HW10 - Due on <font color="red"> Wednesday, April 25 by the class</font> | <a href="HW10.pdf"><font color="red"> Solutions(PDF)</font></a></h4></li>
+<ul style="list-style-type:disc;">
+<li>Consider the following Dirichlet problem
+$$
+\left\{
+\begin{array}{ll}
+U_{rr}+\frac{1}{r}U_r+\frac{1}{r^2}U_{\theta\theta}=0 & \mbox{in} \, \, r < 2,\\
+U(2,\theta)=1+3\sin(2\theta). &
+\end{array}
+\right.
+$$
+Without finding the solution, answer the following questions. <br>
+1. Find the maximum value of $U$ on disk with radius $2$. <br>
+2. Calculate the value of $U$ at the origin. <br>
+3. Using the Poisson's integral formula write down solution to the Dirichlet problem in the disk with radius $ 0 < 2 $.
+</li>
+</ul>
+
+
+
+</ul>
+
+
+
+
+<li><h3>Important Links</h3>
+<ul style="list-style-type:square;">
+<li>Please log-on <a href="https://lms.uconn.edu/">HuskyCT</a> for the course announcements and grades. </li>
+<li> Academic Calendar for this semester <a href="https://registrar.uconn.edu/academic-calendar/spring-2018/">https://registrar.uconn.edu/academic-calendar/spring-2018/</a>.</li>
+<li> Exam rescheduling <a href="https://guide.uconn.edu/student-interactions/rescheduling-exams/">https://guide.uconn.edu/student-interactions/rescheduling-exams/</a>.</li>
+<li>Academic Integrity Policy <a href="https://community.uconn.edu/academic-integrity-faculty-faq/">https://community.uconn.edu/academic-integrity-faculty-faq/</a>.</li>
+</ul>
+</ul>
+<i><span id="lastModified"></span></i>
+</div>
+</body>
+</html>
