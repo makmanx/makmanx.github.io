@@ -1,0 +1,806 @@
+<html>
+<head>
+<script type="text/javascript">
+onload = function(){
+    document.getElementById("lastModified").innerHTML = "Page last changed " + document.lastModified.split(" ")[0];
+}
+</script>
+
+<meta name="google-site-verification" content="FcKpAHCWY86ssoPIcOtyRrV53VdJeJDNGsmq7HV9mvA" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+
+
+<title>Murat Akman's Home Page</title>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106533103-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106533103-1');
+</script>
+
+
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body {
+ background-color: #fce2b0;  */
+ font-family: arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 20px;
+/*        height: 450px;  Should be removed. Only for demonstration */
+
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ h1 {
+    text-align: center;
+    font-size: 1em;
+    }
+    
+  
+h2 {
+    font-weight: normal;
+    font-size: 1em;
+</style>
+
+<body>
+
+<div class="row">
+  <div class="column left" style="background-color:#fce2b0;padding-left:20pt;padding-top:60pt;">
+
+
+<br>
+
+<p> I am currently lecturer (assistant professor) at <a href="https://www.essex.ac.uk/">University of Essex</a>, UK. Before arriving to Essex, I was <b>Evarist Giné </b> 
+Assistant Research Professor at the <a href="http://www.math.uconn.edu/">University of Connecticut</a> where I worked with <a href="https://badger.math.uconn.edu/">Matthew Badger</a> and before that I was a postdoctoral researcher at the 
+<a href="https://www.icmat.es/">Instituto de Ciencias Matematicas</a>,  Madrid, Spain where my mentor was <a href="https://www.icmat.es/miembros/martell/">José María Martell</a>. 
+I did my PhD at the <a href="https://math.as.uky.edu/">University of Kentucky</a> 
+with <a href="http://www.ms.uky.edu/~johnl/">John Lewis</a> in 2014. 
+I also received  postdoctoral researcher fellowship from <a href="http://www.mittag-leffler.se/">Institut Mittag-Leffler</a>, 
+Stockholm, Sweden to attend the Evolutionary Problems semester in the fall of 2013. 
+During the spring semester of 2017, I was a postdoctoral fellow at the 
+<a href="https://www.msri.org">Mathematical Sciences Research Institute</a>, Berkeley, CA to participate 
+in the <a href="http://www.msri.org/programs/300">Harmonic Analysis</a> program where my mentor was <a href="https://sites.math.washington.edu/~toro/">Tatiana Toro</a>. 
+</p>
+
+
+<ul style="list-style-type:none;padding-left:20pt;">
+
+
+<li><h3>News</h3></li>
+
+<ul style="list-style-type:disc;">
+
+<li>
+My research will be supported by the EPSRC New Investigator award Scheme (See the details on GoW webpage: https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/W001586/1) . There will be a 2-year postdoc position starting in September/October 2022 to work on problems related to linear and non-linear elliptic PDEs (Laplace and p-Laplace equations) and their applications in Minkowski-type problems and Brunn-Minkowski-type inequalities. The job will be post soon on mathbjobs.org and jobs.ac.uk. Please contact me directly (murat.akman@essex.ac.uk) if you have any questions.  
+</li>
+
+<li>
+I am always interested in advising PhD students and happy to work with postdoctoral researchers. Email me if you are interested in. 
+</li>
+</ul>
+
+
+<li><h3>Publications and Preprints</h3></li>
+
+<ul style="list-style-type:disc;">
+
+
+<li>
+<b>Failure of Fatou type theorems for solutions to PDE of  $p$-Laplace type in domains with flat boundaries.</b><br>
+(with <a href="http://www.ms.uky.edu/~johnl/">John Lewis</a> and 
+<a href="http://thecollege.syr.edu/people/faculty/pages/math/vogel-andrew.html">Andrew Vogel</a>).
+<br>
+To appear in <i><font color="#003366"><b>Communications in Partial Differential Equations</b></font></i>, (2021), 47 pages.
+[<a href="https://arxiv.org/abs/2109.04952"><font color="#003366">arXiv</font></a>, 
+<a onclick="document.getElementById('abstract17').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, 
+Slides]
+
+<div id="abstract17" style="display:none;width: 710px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+
+<p style="width: 700px;">   <b>Abstract:</b> 
+  Let   $  \mathbb{R}^{n} $  denote Euclidean $ n $ space    and  given  $k$   a positive integer let  $ \Lambda_k  
+  \subset \mathbb{R}^{n} $,   $ 1 \leq k < n - 1,  n \geq 3, $  be a $k$-dimensional plane with $ 0 \in \Lambda_k.$    
+  If     $n-k < p < \infty$, we  first  study  the    Martin boundary  problem  for solutions to  the   $p$-Laplace equation (called $p$-harmonic functions) in
+   $\mathbb{R}^{n}  \setminus \Lambda_k $ relative to $ \{0\}. $  We then  use the results from our study to   
+     extend  the work of Wolff on the failure of Fatou type theorems  for   $p$-harmonic functions in $ \mathbb{R}^{2}_+ $ to $p$-harmonic functions  in $ \mathbb{R}^{n} \setminus \Lambda_k $   when $ n-k < p <\infty$.  Finally, we  discuss generalizations of our  work to  solutions of  $ p $-Laplace type   PDE  (called $ \mathcal{A}$-harmonic  functions).  
+ </p>
+ <br>
+ [W] Thomas H. Wolff, Gap series constructions for the p-Laplacian,<i> J. Anal. Math.</i> <b>102</b> (2007), 371–394.
+<br>
+<a onclick="document.getElementById('abstract17').style.display='none';return false;" href=""style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+<li>
+<b>Square function and non-tangential maximal function estimates for elliptic operators in 1-sided NTA domains satisfying the capacity density condition.</b><br>
+(with <a href="https://faculty.missouri.edu/~hofmanns/"> Steve Hofmann</a>, <a href="https://www.icmat.es/miembros/martell/">
+Jos&eacute; Mar&iacute;a Martell</a>, and <a href="https://sites.math.washington.edu/~toro/">Tatiana Toro</a>).
+<br>
+Submitted, (2021), 35 pages.
+[<a href="https://arxiv.org/abs/2103.10046"><font color="#003366">arXiv</font></a>, <a onclick="document.getElementById('abstract16').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, 
+<a href="AHMTslide.pdf">Slides</a>]
+<div id="abstract16" style="display:none;width: 710px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+<p style="width: 700px;"> <b>Abstract:</b> 
+Let 	$\Omega\subset\mathbb{R}^{n+1}$, $n\geq 2$, be a 1-sided non-tangentially accessible domain (aka uniform domain),  that is, $\Omega$ satisfies the interior Corkscrew and Harnack chain conditions, which are respectively scale-invariant/quantitative versions of openness and path-connectedness. Let us assume also that $\Omega$ satisfies the so-called capacity density condition, a quantitative version of the fact that all boundary points are Wiener regular. Consider $L_0 u=-\mbox{div}(A_0\nabla u)$, $Lu=-\mbox{div}(A\nabla u)$,  two real (non-necessarily symmetric) uniformly elliptic operators in $\Omega$, and write $\omega_{L_0}$, $\omega_L$ for the respective associated elliptic measures. The goal of this program is to find sufficient conditions guaranteeing that $\omega_L$ satisfies an $A_\infty$-condition or a $RH_q$-condition with respect to $\omega_{L_0}$. </p>
+
+<p style="width: 700px;">
+In this  paper we are interested in obtaining square function and non-tangential estimates for solutions of operators as before.  We establish that bounded weak null-solutions satisfy Carleson measure estimates, with respect to the associated elliptic measure. We also show that for every weak null-solution, the associated square function can be controlled by the non-tangential maximal function in any Lebesgue space with respect to the associated elliptic measure. These results extend previous work of Dahlberg-Jerison-Kenig [DJK] and are fundamental for the proof of the perturbation results in arXiv:1901.08261.</p>
+ 
+[DJK] B. E. J. Dahlberg, D. S. Jerison, and C. E. Kenig. Area integral estimates for elliptic differential operators with nonsmooth coefficients. <I> Ark. Mat.</i>, 22(1): 97-108, 1984.
+
+
+<a onclick="document.getElementById('abstract16').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+<li>
+<b>On a Theorem of Wolff Revisited.</b><br>
+(with <a href="http://www.ms.uky.edu/~johnl/">John Lewis</a> and 
+<a href="http://thecollege.syr.edu/people/faculty/pages/math/vogel-andrew.html">Andrew Vogel</a>).<br>
+<i><font color="#003366"><b>Journal d'Analyse Mathématique</b></font></i> (To appear), 40 pages.
+[<a href="https://arxiv.org/abs/2002.04677"><font color="#003366">arXiv</font></a>, 
+<a onclick="document.getElementById('abstract15').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, 
+Slides]
+
+<div id="abstract15" style="display:none;width: 710px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+
+<p style="width: 700px;">   <b>Abstract:</b> 
+  We   study  $p$-harmonic functions,  $ 1 <  p \neq 2 <  \infty$, in     $ \mathbb{R}^{2}_+  =  \{ z = x + i y : y  >  0,  - \infty  <  x  <  \infty \}  $  and   
+  $ B ( 0, 1 )   =   \{ z :   |z| < 1 \}$.  We first  show    
+  for  fixed   $p$, $1 <  p \neq 2  <   \infty$, and for all large integers  $N\geq N_0$  that   there  exists  $p$-harmonic function,
+  $ V = V ( r  e^{i\theta} )$,   which is $  2\pi/N  $ 
+  periodic in the $ \theta $ variable,    and  Lipschitz continuous on  $  \partial  B (0, 1)$ with   Lipschitz norm
+   $\leq  c N$ on $  \partial B ( 0, 1 )$ satisfying    $V(0)=0$ and  
+   \[   c^{-1}  \leq    \int_{-\pi}^{\pi} V  (  e^{i\theta} )  d \theta    \leq  c.\]  
+ In case $2 < p < \infty $ we  give   a   more or less explicit  example of  $V$ and our work  is an extension of a result of  Wolff in [W]  on    
+$  \mathbb{R}^{2}_+ $  to   $ B (0, 1).$  Using our first result, we extend  the work of Wolff in \cite{W} on failure of Fatou type theorems  for   $ \mathbb{R}^{2}_+ $  to $ B (0, 1)$ for $p$-harmonic functions, $1 <  p \neq 2 < \infty$.  Finally, we  also  outline   the    modifications  needed  for extending the   work of  Llorente,  Manfredi,  and Wu in  [LMW]
+ regarding failure of subadditivity of  $p$-harmonic measure on $ \partial \mathbb{R}^{2}_+   $   to  $\partial  B (0, 1)$.   
+ </p>
+ <br>
+ [W] Thomas H. Wolff, Gap series constructions for the p-Laplacian,<i> J. Anal. Math.</i> <b>102</b> (2007), 371–394.
+[LMW] Jose G. Llorente, Juan J. Manfredi, and Jang-Mei Wu, p-harmonic measure is not additive on null sets, <i>Ann. Sc. Norm. Super. Pisa Cl. Sci.</i> (5) <b>4</b> (2005), no. 2, 357–373.
+<br>
+<a onclick="document.getElementById('abstract15').style.display='none';return false;" href=""style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+
+
+
+<li> 
+<b>On a Bernoulli-type overdetermined free boundary problem.</b><br>
+(with <a href="https://www.math.tifrbng.res.in/people/agnid">Agnid Banerjee</a> and 
+<a href="http://faculty.wwu.edu/smitvem/">Mariana Smit Vega Garcia</a>).<br>
+<i><font color="#003366"><b>Ann. Fenn. Math.</b></font></i> 46 (2021), no. 2, 601–618.
+[<a href="https://arxiv.org/abs/1911.02801"><font color="#003366">arXiv</font></a>, 
+<a onclick="document.getElementById('abstract14').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, 
+Slides]
+
+<div id="abstract14" style="display:none;width: 710px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+
+<p style="width: 700px;">   <b>Abstract:</b>
+In this article we study a Bernoulli-type free boundary problem and generalize a work of Henrot and Shahgholian in [HS] to $\mathcal{A}$-harmonic PDEs. These are  quasi-linear elliptic PDEs whose structure  is modelled on the $p$-Laplace equation for a  fixed $1 < p < \infty$. In particular,  we show that if $K$ is a bounded convex set satisfying the interior ball condition and $c>0$ is a given constant, then there exists a unique convex domain $\Omega$ with $K\subset \Omega$ and a function  $u$ which is  $\mathcal{A}$-harmonic in $\Omega\setminus K$, has continuous boundary values $1$ on $\partial K$ and $0$ on $\partial\Omega$, such that  $|\nabla u|=c$ on $\partial \Omega$. Moreover, $\partial\Omega$ is $C^{1,\gamma}$ for some $\gamma>0$, and it is smooth provided  $\mathcal{A}$ is smooth in $\mathbb{R}^n \setminus \{0\}$. We also show that the super level sets $\{u>t\}$ are convex for $t\in (0,1)$. 
+</p>
+
+[HS]: Antoine Henrot and Henrik Shahgholian. Existence of classical solutions to a free boundary problem for the p-Laplace operator. I. The exterior convex case. <i>J. Reine Angew. Math.</i>, 521:85– 97, 2000.
+<br>
+<a onclick="document.getElementById('abstract14').style.display='none';return false;" href=""style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+
+
+
+
+<li>
+<b>Note on an eigenvalue problem with applications to  a   Minkowski  type  regularity problem in  $\mathbb{R}^{n}$.</b><br>
+(with <a href="http://www.ms.uky.edu/~johnl/">John Lewis</a> and 
+<a href="http://thecollege.syr.edu/people/faculty/pages/math/vogel-andrew.html">Andrew Vogel</a>).<br>
+<i><font color="#003366"><b>Calc. Var. PDEs</b></font></i> 59 (2020), no. 2, Paper No. 47, 42 pages. 
+[<a href="https://link.springer.com/article/10.1007%2Fs00526-020-1697-7">Published Version</a>, <a href="https://arxiv.org/abs/1906.01576"><font color="#003366">arXiv</font></a>, 
+<a onclick="document.getElementById('abstract13').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, 
+<a href="ALVslide.pdf">Slides</a>]
+
+<div id="abstract13" style="display:none;width: 710px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+
+<p style="width: 700px;">   <b>Abstract:</b> We   consider   existence and uniqueness of  homogeneous  solutions  $ u > 0   $   to  certain    PDE  of   $p$-Laplace type,   
+$ p $ fixed,   $ n - 1 < p < \infty,  n  \geq 2, $     when  $ u $ is  a solution  in  $K(\alpha)\subset\mathbb{R}^n$ where
+\[  
+K (\alpha)  :=    \{ x = (x_1, \dots, x_n ) : 
+x_1   >  \cos \alpha  \,   | x|  \}  \quad \mbox{for fixed}\, \,   \alpha \in (0,  \pi ],     
+\]      
+ with continuous boundary value zero  on  $ \partial   K ( \alpha ) \setminus \{0\}$.       
+ In our main result  we show that  if    $ u $  has  continuous boundary value $0$  on  $  \partial  K  ( \pi )$  
+ then  $u$ is homogeneous of   degree   $  1   -   (n-1)/p  $  when $ p  >  n - 1. $       </p>
+ 
+<p style="width: 700px;"> Applications of  this result  are given  to  a   Minkowski  type  regularity problem  in $  \mathbb{R}^{n}$ when $n=2,3$.  
+ </p>
+<a onclick="document.getElementById('abstract13').style.display='none';return false;" href=""style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+
+
+
+
+<li>
+<b>Note on an eigenvalue problem  for an  ODE  originating  from a homogeneous p-harmonic function.</b><br>
+(with <a href="http://www.ms.uky.edu/~johnl/">John Lewis</a> and 
+<a href="http://thecollege.syr.edu/people/faculty/pages/math/vogel-andrew.html">Andrew Vogel</a>).<br>
+This is a survey article dedicated to V. G. Maz'ya on the occasion of his 80th birthday. <br>
+<i><font color="#003366"><b>Algebra i Analiz </b></font></i> 31 (2019), no. 2, 75–87.   
+[<a href="http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=aa&paperid=1638&option_lang=eng">Published Version</a>, 
+<a onclick="document.getElementById('abstract12').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, Slides]
+<div id="abstract12" style="display:none;width: 710px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+<p style="width: 700px;"> <b>Abstract:</b>
+  We  discuss  what is  known about   homogeneous  solutions  $ u  $  to  the   
+  p-Laplace equation, $ p $ fixed,   $1 < p < \infty,$     when  
+<ul style="list-style-type:square;">
+<li> $u$ is an entire p-harmonic function in $\mathbb{R}^{n}$,</li>
+</ul>
+  or
+  <ul style="list-style-type:square;">
+<li>
+$ u > 0 $ is  p-harmonic  in  the cone,  
+  \[  
+  K(\alpha)  =    \{ x = (x_1, \dots, x_n ) : x_1   >  \cos  \alpha \, | x|  \}  \subset  \mathbb{R}^n,     \, n \geq 2,  \]      
+ with continuous boundary value zero  on  $ \partial  K (\alpha) \setminus \{0\}  $  when $ \alpha  \in (0, \pi]. $    
+</li>
+</ul>
+ </p>  
+    
+<p style="width: 700px;">  We  also outline a  proof of  our   new  result  concerning the exact value, 
+$ \lambda =  1 -   (n-1)/p,  $  for   an  eigenvalue problem in an  ODE  associated  with  $u$  when  $ u$ 
+ is p-hamonic    in  $ K ( \pi ) $  and  $ p > n - 1. $   Generalizations of  this  result are  stated   
+ for  $ \lambda  \leq n - 1. $ Our  result complements work of Krol'-Maz'ya in [KM]  for $ 1  <  p  \leq n - 1. $  </p>
+
+
+[KM] Krol', I. N., Maz'ya, V. G., On the absence of continuity and H&ouml;lder continuity of solutions of 
+quasilinear elliptic equations near a nonregular boundary, <i>Trans. Moscow Math. Soc.</i> 26 (1972), 73 - 93.
+<a onclick="document.getElementById('abstract12').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+<li>
+<b>Perturbation of elliptic operators in 1-sided NTA domains satisfying the capacity density condition.</b><br>
+(with <a href="https://faculty.missouri.edu/~hofmanns/"> Steve Hofmann</a>, <a href="https://www.icmat.es/miembros/martell/">
+Jos&eacute; Mar&iacute;a Martell</a>, and <a href="https://sites.math.washington.edu/~toro/">Tatiana Toro</a>).
+<br>Submitted, (2021), 55 pages.
+[<a href="https://arxiv.org/abs/1901.08261"><font color="#003366">arXiv</font></a>, <a onclick="document.getElementById('abstract11').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, 
+<a href="AHMTslide.pdf">Slides</a>]
+<div id="abstract11" style="display:none;width: 710px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+<p style="width: 700px;"> <b>Abstract:</b> 
+Let $ \Omega \subset \mathbb{R}^{n+1}$, $n\ge 2$, be a 1-sided non-tangentially accessible domain (aka uniform domain), that is, a set which satisfies the interior corkscrew and Harnack chain conditions, which are respectively scale-invariant/quantitative versions of openness and path-connectedness. Assume also that $ \Omega $ satisfies  the so-called capacity density condition, a quantitative version of the fact that all boundary points are Wiener regular.  Let $ L_0 u=-\mbox{div}(A_0\nabla u)$ and $Lu=-\mbox{div}(A\nabla u)$ be two real (non-necessarily symmetric) uniformly elliptic operators, and write $\omega_{L_0}$ and $\omega_L$ for the respective associated elliptic measures. The goal of this paper is to find sufficient conditions guaranteeing that $ \omega_L $ satisfies an $ A_\infty $-condition or a $RH_q$-condition with respect to $\omega_{L_0}$. We show that if the discrepancy of the two matrices satisfies a natural Carleson measure condition with respect to $\omega_{L_0}$ then $\omega_L\in A_\infty(\omega_{L_0})$. Moreover, we obtain that $\omega_L\in RH_q(\omega_{L_0})$ for any given $1 < q < \infty$ if the Carleson measure condition is assumed to hold with a sufficiently small constant. This ``small constant'' case extends previous work of Fefferman [F], Fefferman-Kenig-Pipher [FKP], and Milakis-Pipher-Toro [MPT] who considered symmetric operators in Lipschitz and  bounded chord-arc domains respectively. </p> 
+
+<p style="width: 700px;">
+In this work, we go beyond those settings, our domains satisfy a capacity density condition which is much weaker than the existence of exterior corkscrew balls. Moreover, the boundaries of our domains need not to be Ahlfors regular and the restriction of the $n$-dimensional Hausdorff measure to the boundary could be even locally infinite. The ``large constant'' case, that is, the one on which we just assume that the discrepancy of the two matrices satisfies a Carleson measure condition, is new even in the case of nice domains (such as the unit ball, the upper-half space, or  non-tangentially accessible domains)  and  in the case of symmetric operators.  
+We emphasize that our results hold in the absence of a nice surface measure: 
+all the analysis is done with the underlying measure $\omega_{L_0}$, which behaves well in the settings we are considering. When particularized to the setting of Lipschitz, chord-arc, or  1-sided chord-arc domains, our methods allow us to immediately recover a number of existing perturbation results as well as extend some of them. Of independent interest, is the extension of the Dahlberg-Jerison-Kenig [DJK] result concerning conical square function and non-tangential maximal functions to  1-sided non-tangentially accessible domains satisfying the capacity density condition.  
+
+</p> 
+[DJK] B. E. J. Dahlberg, D. S. Jerison, and C. E. Kenig. Area integral estimates for elliptic differential operators with nonsmooth coefficients. <I> Ark. Mat.</i>, 22(1): 97-108, 1984.
+<br>
+[F] R. Fefferman. A criterion for the absolute continuity of the harmonic measure associated
+with an elliptic operator. <i>J. Amer. Math. Soc.</i>, 2(1):127-135, 1989.
+<br>
+[FKP] R. A. Fefferman, C. E. Kenig, and J. Pipher. The theory of weights and the Dirichlet problem for elliptic equations. <i>Ann. of Math.</i> (2), 134(1):65-124, 1991.
+<br>
+[MPT] Emmanouil Milakis, Jill Pipher, and Tatiana Toro. Harmonic analysis on chord arc domains. <i>J. Geom. Anal.</i>, 23(4):2091–2157, 2013.
+<br>
+
+<a onclick="document.getElementById('abstract11').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+
+
+
+
+
+
+<li>
+<b>The  Brunn-Minkowski inequality and a Minkowski problem for $\mathcal{A}$-harmonic Green's function.</b><br>
+(with <a href="http://www.ms.uky.edu/~johnl/">John Lewis</a>, <a href="https://www.math.uni-bonn.de/people/saari/">Olli Saari</a>, and <a href="http://thecollege.syr.edu/people/faculty/pages/math/vogel-andrew.html">Andrew Vogel</a>).
+<br>
+<i><font color="#003366"><b>Adv. Calc. Var.</b></font></i> 14 (2021), no. 2, 247-302.
+[<a href="https://www.degruyter.com/view/j/acv.ahead-of-print/acv-2018-0064/acv-2018-0064.xml?rskey=MxfXSo&result=2&q=akman%2C+m"><font color="#003366">Published Version</font></a>,
+<a href="https://arxiv.org/abs/1810.03752"><font color="#003366">arXiv</font></a>, 
+<a onclick="document.getElementById('abstract10').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, 
+<a href="AGHLVslide.pdf">Slides</a>]
+<div id="abstract10" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+
+<p style="width: 700px;"> <b>Abstract:</b> In this article we study two classical problems in convex geometry associated to $\mathcal{A}$-harmonic PDEs, quasi-linear elliptic PDEs whose structure is  modeled on the  $p$-Laplace equation. Let $p$ be fixed with $2 \leq n \leq p< \infty$. For a convex compact set $E$ in $\mathbb{R}^{n}$, we define and then prove the existence and uniqueness of the  so called $\mathcal{A}$-harmonic Green's function for the complement of $E$ with a pole at  infinity. We then define a quantity $\mbox{C}_{\mathcal{A}}(E)$ which can be seen as the behavior of  this  function near infinity. </p>
+
+In the first part of this article,  we prove that $\mbox{C}_{\mathcal{A}}(\cdot)$ satisfies the following Brunn-Minkowski type inequality
+\[
+\left[\mbox{C}_\mathcal{A}  ( \lambda  E_1 + (1-\lambda) E_2 )\right]^{\frac{1}{(p-n)}}  \geq  \lambda  \, 
+\left[\mbox{C}_\mathcal{A}  (  E_1 )\right]^{\frac{1}{(p-n)}}  +  (1-\lambda)  \left[\mbox{C}_\mathcal{A}  (E_2 )\right]^{\frac{1}{(p-n)}}
+\]
+when  $n <  p <\infty $, $0 \leq \lambda \leq 1$, and $E_1, E_2$ are nonempty convex compact sets in $\mathbb{R}^{n}$.  If  $p=n$
+\[
+\mbox{C}_\mathcal{A}  ( \lambda  E_1 + (1-\lambda) E_2 ) \geq  \lambda  \, 
+\mbox{C}_\mathcal{A}  (  E_1 )  +  (1-\lambda)  \mbox{C}_\mathcal{A}  (E_2 )
+\]
+where $0 \leq  \lambda \leq 1$ and $E_1, E_2$ are convex compact sets in $\mathbb{R}^{n}$ containing at least two points. 
+
+<p> Moreover, if equality holds  in the either of the  above inequalities for some $E_1$ and $E_2, $ then under certain  
+regularity and structural assumptions on $\mathcal{A}$  we show that  these two sets are homothetic. </p>
+
+
+<p>The  classical Minkowski problem asks for necessary and sufficient conditions on a non-negative 
+Borel measure on the unit sphere $\mathbb{S}^{n-1}$ to be the surface area 
+measure of a convex compact set in $\mathbb{R}^{n}$ under the   Gauss  mapping for the boundary of  this set. 
+In the second part of this article we study a Minkowski type problem for a measure  
+associated to the $\mathcal{A}$-harmonic Green's function of the complement of 
+a convex compact set $E$ when $n \leq p <  \infty$. If  $   \mu_E $ denotes this measure, 
+then we show that  necessary and sufficient conditions for  existence  under this setting are 
+exactly the same conditions as in the classical Minkowski problem. Using the Brunn-Minkowski 
+inequality result from the first part, we also show that this problem has a unique solution up to translation.</p>
+<a onclick="document.getElementById('abstract10').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+<li>
+<b>The  Brunn-Minkowski inequality and a Minkowski problem for nonlinear capacity.</b><br>
+(with Jasun Gong, <a href="https://jayhineman.wordpress.com/">Jay Hineman</a>, <a href="http://www.ms.uky.edu/~johnl/">John Lewis</a>, and <a href="http://thecollege.syr.edu/people/faculty/pages/math/vogel-andrew.html">Andrew Vogel</a>).
+<br>
+<i><font color="#003366"><b>Mem. Amer. Math. Soc.</b></font></i> (To appear), 108 pages.
+[<a href="https://arxiv.org/abs/1709.00447"><font color="#003366">arXiv</font></a>, 
+<a onclick="document.getElementById('abstract9').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, 
+<a href="AGHLVslide.pdf">Slides</a>]
+<div id="abstract9" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+
+<p style="width: 700px;"> <b>Abstract:</b> In this article we study two classical potential-theoretic problems in convex geometry.  The first problem is  an inequality of  Brunn-Minkowski type for  a nonlinear capacity, $\mbox{Cap}_{\mathcal{A}}$, where  $\mathcal{A}$-capacity  is  associated with  a   nonlinear elliptic  PDE  whose  structure is modeled on 
+the  $p$-Laplace equation and whose solutions in an open set are called $ \mathcal{A}$-harmonic.  
+</p>
+
+<p style="width: 700px;"> In the first part of this article, we prove the Brunn-Minkowski inequality for  this  capacity:
+\[
+\left[\mbox{Cap}_\mathcal{A}  ( \lambda  E_1 + (1-\lambda) E_2 )\right]^{\frac{1}{(n-p)}}  \geq  \lambda  \, 
+\left[\mbox{Cap}_\mathcal{A}  (  E_1 )\right]^{\frac{1}{(n-p)}}  +  (1-\lambda)  \left[\mbox{Cap}_\mathcal{A}  (E_2 )\right]^{\frac{1}{(n-p)}}
+\]
+when  $1 < p < n$, $0 < \lambda  < 1$,  and $E_1, E_2$ are convex compact sets with positive  $\mathcal{A}$-capacity. 
+Moreover, if equality holds  in  the  above inequality for some $E_1$ and $E_2, $ then under certain  
+regularity and structural assumptions on $\mathcal{A},$  we show that  these two sets are homothetic. 
+</p>
+
+<p style="width: 700px;"> In the second part of this article we study a Minkowski problem for a certain measure  
+associated with a  compact convex set  $E$ with nonempty interior  and its    $ \mathcal{A}$-harmonic capacitary function in the complement of $E$. If  $   \mu_E $ denotes this measure, then the  Minkowski problem we consider in this setting is that; for a given finite Borel measure $\mu$ on $\mathbb{S}^{n-1}$, find necessary and sufficient conditions for which there exists $ E $ as above with $  \mu_E   =  \mu$.   We show that  necessary and sufficient conditions for  existence under this setting are exactly the same conditions as in the classical Minkowski problem for volume as well as in the work of Jerison for  electrostatic capacity. Using the Brunn-Minkowski inequality result from the first part, we also show that this problem has a unique solution up to translation  when $p\neq n- 1$ and translation and dilation when $p  =  n-1$. 
+</p>
+<a onclick="document.getElementById('abstract9').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+
+<li>
+<b>Absolute continuity of harmonic measure for domains with lower regular boundaries.</b><br>
+(with <a href="http://www.maths.ed.ac.uk/~jazzam/">Jonas Azzam</a>, and Mihalis Mourgoglou).
+<br>
+<i><font color="#003366"><b>Adv. Math. </b></font></i>345 (2019), 1206-1252.
+[<a href="https://www.sciencedirect.com/science/article/pii/S0001870819300465">Published Version</a>, <a href="http://arxiv.org/abs/1605.07291"><font color="#003366">arXiv</font></a>, 
+<a onclick="document.getElementById('abstract8').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, 
+<a href="AAMslide.pdf">Slides</a>]
+<div id="abstract8" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+<p style="width: 700px;"> <b>Abstract:</b>
+ We study absolute continuity of harmonic measure with respect to surface measure on domains $\Omega$ that have large complements. We show that if $\Gamma\subset\mathbb{R}^{n+1}$ is $d$-Ahlfors regular and splits $\mathbb{R}^{n+1}$ into two NTA domains then $\omega_{\Omega} \ll \mathcal{H}^{d}$ on $\Gamma\cap \partial\Omega$. This result is a natural generalization of a result of Wu in [W86]. </p>
+
+<p style="width: 700px;"> We also prove that almost every point in $\Gamma\cap \partial\Omega$ is a cone point if $\Gamma$ is a Lipschitz graph. Combining these results and a result from [AHM$^{3}$TV], we characterize sets of absolute continuity with finite $\mathcal{H}^{d}$-measure both in terms of the cone point condition and in terms of the rectifiable structure of the boundary. This generalizes the results of McMillan in [M69] and Pommerenke in [P86].</p>
+
+<p style="width: 700px;"> Finally, we also show our first result holds for elliptic measure associated with real second order divergence form elliptic operators with a mild assumption on the gradient of the matrix.</p>
+
+[AHM$^{3}$TV] J. Azzam, S. Hofmann, J.M. Martell, S. Mayboroda, M. Mourgoglou, X. Tolsa and A. Volberg. Rectifiability of harmonic measure. arXiv:1509.06294, <i>To appear in GAFA</i>.
+<br>
+[M69] J. E. McMillan. Boundary behavior of a conformal mapping. <i>Acta Math., 123:43-67, 1973</i>.
+<br>
+[P86] C. Pommerenke. On conformal mapping and linear measure. <i>J. Anal. Math.</i>, 46:231-238, 1986.
+<br>
+[W86] J-M. Wu. On singularity of harmonic measure in space. <i>Pacific J. Math.</i>, 121(2):485-496, 1986
+<br>
+<br>
+<a onclick="document.getElementById('abstract8').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+
+
+<li>
+<b>Rectifiability, interior approximation and Harmonic Measure. </b><br>
+(with  <a href="https://sites.google.com/view/simonbortz/home">Simon Bortz</a>, <a href="https://faculty.missouri.edu/~hofmanns/"> Steve Hofmann</a>, and <a href="https://www.icmat.es/miembros/martell/">Jos&eacute; Mar&iacute;a Martell</a>).
+<br>
+ <i><font color="#003366"><b>Ark. Mat.</b></font></i> 57 (2019), no. 1, 1–22.
+[<a href="https://www.intlpress.com/site/pub/pages/journals/items/arkiv/content/vols/0057/0001/a001/">Published Version</a>,  <a href="http://arxiv.org/abs/1601.08251"><font color="#003366">arXiv</font></a>,
+<a onclick="document.getElementById('abstract7').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, <a href="ABHMslide.pdf">Slides</a>]
+<div id="abstract7" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+<p style="width: 700px;"> <b>Abstract:</b>
+ We prove a structure theorem for any $n$-rectifiable set $E\subset\mathbb{R}^{n+1}, n \geq 1$, satisfying a weak version of the lower ADR condition, and having locally finite $\mathcal{H}^{n}$ ($n$-dimensional Hausdorff) measure. Namely, that $\mathcal{H}^{n}$-almost all of $E$ can be covered by a countable union of boundaries of bounded Lipschitz domains contained in $\mathbb{R}^{n+1}\setminus E$. As a consequence, for harmonic measure in the complement of such a set $E$, we establish a non-degeneracy condition which amounts to saying that $\mathcal{H}^{n}|_{E}$ is ''absolutely continuous'' with respect to harmonic measure in the sense that any Borel subset of $E$ with strictly positive $\mathcal{H}^{n}$ measure has strictly positive harmonic measure in some connected component of $\mathbb{R}^{n+1}\setminus E$. We also provide some counterexamples showing that our result for harmonic measure is optimal. Moreover, we show that if, in addition, a set $E$ as above is the boundary of a connected domain $\Omega\subset\mathbb{R}^{n+1}$ which satisfies an infinitesimal interior thickness condition, then $\mathcal{H}^{n}|_{\partial\Omega}$ is absolutely continuous (in the usual sense) with respect to harmonic measure for $\Omega$. </p>
+
+<p style="width: 700px;"> Local versions of these results are also proved: if just some piece of the boundary is $n$-rectifiable then we get the corresponding absolute continuity on that piece. As a consequence of this and recent results in [AHM$^{3}$TV], we can decompose the boundary of any open connected set satisfying the previous conditions in two disjoint pieces: one that is $n$-rectifiable where Hausdorff measure is absolutely continuous with respect to harmonic measure and another purely $n$-unrectifiable piece having vanishing harmonic measure.</p>
+
+ [AHM$^{3}$TV] J. Azzam, S. Hofmann, J.M. Martell, S. Mayboroda, M. Mourgoglou, X. Tolsa and A. Volberg. Rectifiability of harmonic measure. arXiv:1509.06294, <i>To appear in GAFA</i>.
+<br>
+<br>
+<a onclick="document.getElementById('abstract7').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+<li>
+<b>On the absolute continuity of p-harmonic measure and surface measure in Reifenberg flat domains.</b><br>
+<i><font color="#003366"><b>Pacific J. Math.</b></font></i> 286 (2017), no. 1, 25-37.
+[<a href="http://msp.org/pjm/2017/286-1/p02.xhtml"><font color="#003366">Published Version</font></a>, <a href="http://arxiv.org/abs/1509.07073"><font color="#003366">arXiv</font></a>, <a onclick="document.getElementById('abstract6').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>]
+<div id="abstract6" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+<p style="width: 700px;"><b>Abstract:</b> In this paper, we study the set of absolute continuity of $p$-harmonic measure, $\mu$, and $ (n-1)$-dimensional Hausdorff measure, $\mathcal{H}^{n-1}$, on locally flat domains in $\mathbb{R}^{n}, n \geq 2$. We prove that for fixed $p$ with $2 < p < \infty$ there exists a Reifenberg flat domain $\Omega \subset \mathbb{R}^{n}, n \geq 2$, with $\mathcal{H}^{n-1}(\partial\Omega) < \infty$ and a Borel set $K\subset\partial\Omega$ such that $\mu(K) > 0=\mathcal{H}^{n-1}(K)$ where $\mu$ is the $p$-harmonic measure associated to a positive weak solution to $p$-Laplace equation in $\Omega$ with continuous boundary value zero on $\partial\Omega$. We also show that there exists such a domain for which the same result holds when p is fixed with $2-\eta < p < 2$ for some $\eta > 0$ provided that $n \geq 3$. </p>
+
+<p style="width: 700px;">This work is a generalization of a recent result of Azzam, Mourgoglou, and Tolsa in [AMT] when the measure $\mu$ is harmonic measure at $x$, $\omega=\omega^{x}$, associated to the Laplace equation, i.e when $p = 2$.</p>
+
+[AMT] Jonas Azzam, Mihalis Mourgoglou, and Xavier Tolsa, Singular sets for harmonic measure on locally flat domains with locally finite surface measure, arXiv:1501.07585, <i>To appear in IMRN.</i> 
+<br>
+<br>
+<a onclick="document.getElementById('abstract6').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+
+<li>
+<b>$\sigma$-finiteness of elliptic measures for quasilinear elliptic PDE in space. </b><br>
+(with <a href="http://www.ms.uky.edu/~johnl">John Lewis</a> and 
+<a href="http://thecollege.syr.edu/people/faculty/pages/math/vogel-andrew.html">Andrew Vogel</a>).
+<br>
+ <i><font color="#003366"><b>Adv. Math.</b></font></i> 309 (2017), 512-557.
+[<a href="http://www.sciencedirect.com/science/article/pii/S0001870815302188"><font color="#003366">Published Version</font></a>,
+<a href="http://arxiv.org/abs/1509.07068"><font color="#003366">arXiv</font></a>,
+<a onclick="document.getElementById('abstract5').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, <a href="ALVslide.pdf">Slides</a>]
+<div id="abstract5" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+<p style="width: 700px;"> <b>Abstract:</b>
+ In this paper we study the Hausdorff dimension of a elliptic measure μf in space associated to a positive weak solution to a certain quasilinear elliptic PDE in an open subset and vanishing on a portion of the boundary of that open set. We show that this measure is concentrated on a set of $\sigma$−finite $n−1$-dimensional Hausdorff measure for $p > n$ and the same result holds for $p = n$ with an assumption on the boundary. </p>
+
+<p style="width: 700px;">We also construct an example of a domain in space for which the corresponding measure has Hausdorff dimension $\leq n-1-\delta$  for $p \geq n$ for some $\delta$ which depends on various constants including $p$.</p>
+
+<p style="width: 700px;">The first result generalizes the authors previous work when the PDE is the $p$−Laplacian and the second result generalizes the well known theorem of Wolff when $p = 2$ and $n = 2$.
+</p>
+<a onclick="document.getElementById('abstract5').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+
+
+
+<li>
+<b>Rectifiability and elliptic measures on 1-sided NTA domains with Ahlfors-David regular boundaries. </b><br>
+(with <a href="http://www.math.uconn.edu/~badger/">Matthew Badger</a>, and <a href="https://faculty.missouri.edu/~hofmanns/"> Steve Hofmann</a>, and <a href="https://www.icmat.es/miembros/martell/">Jos&eacute; Mar&iacute;a Martell</a>).
+<br>
+<i><font color="#003366"><b>Trans. Amer. Math. Soc.</b></font></i> <i>369</i> (2017), no. 8, 5711-5745. 
+[<a href="http://www.ams.org/journals/tran/2017-369-08/S0002-9947-2017-06927-0/"><font color="#003366">Published Version</font></a>,
+<a href="http://arxiv.org/abs/1507.02039"><font color="#003366">arXiv</font></a>,
+<a onclick="document.getElementById('abstract4').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, <a href="ABHMtslide.pdf">Slides</a>]
+<div id="abstract4" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+<br>
+<b>Abstract:</b>
+<p style="width: 700px;">Let $\Omega\subset\mathbb{R}^{n+1}$, $n \geq 2$, be 1-sided NTA domain (aka uniform domain), i.e.~a domain which satisfies interior Corkscrew and Harnack Chain conditions, and assume that $\partial\Omega$ is n-dimensional Ahlfors-David regular. We characterize the rectifiability of $\partial\Omega$ in terms of the absolute continuity of surface measure with respect to harmonic measure. We also show that these are equivalent to the fact that $\partial\Omega$ can be covered $\mathcal{H}^{n}$-a.e. by a countable union of portions of boundaries of bounded chord-arc subdomains of $\Omega$ and to the fact that $\partial\Omega$ possesses exterior corkscrew points in a qualitative way $\mathcal{H}^{n}$-a.e. Our methods apply to harmonic measure and also to elliptic measures associated with real symmetric second order divergence form elliptic operators with locally Lipschitz coefficients whose derivatives satisfy a natural qualitative Carleson condition.</p>
+
+<a onclick="document.getElementById('abstract4').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+
+
+
+
+
+
+<li>
+<b>Hausdorff dimension and $\sigma$-finiteness of $p$-harmonic measures in space when $p\geq n$. </b><br>
+(with <a href="http://www.ms.uky.edu/~johnl">John Lewis</a> and <a href="http://thecollege.syr.edu/people/faculty/pages/math/vogel-andrew.html">Andrew Vogel</a>).
+<br>
+<i><font color="#003366"><b>Nonlinear Anal.</b></font></i> <b>129</b> (2015), 198-216. 
+[<a href="http://www.sciencedirect.com/science/article/pii/S0362546X15003016"><font color="#003366">Published Version</font></a>,
+<a href="http://arxiv.org/abs/1306.5617"><font color="#003366">arXiv</font></a>,
+<a onclick="document.getElementById('abstract3').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, <a href="Aslide.pdf">Slides</a>] 
+<div id="abstract3" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+
+<p style="width: 700px;"><b>Abstract:</b>
+In this paper, we   study   a    measure, $\mu$,  associated with a  positive  $p$ harmonic function $u$  defined in an open set $ O\subset \mathbb{R}^n $ and vanishing on  a portion $ \Gamma $ of  $ \partial O. $  If $ p > n $ we show $\mu $
+       is concentrated on a set of  $ \sigma $ finite $ \mathrm{H}^{n-1} $ measure  while if  $ p = n $  the  same conclusion holds provided  $ \Gamma $ is  uniformly fat in the sense of  $n$  capacity.</p>
+<p style="width: 700px;">   Our work  nearly  answers in the affirmative  a  conjecture in  [L12]  and  also appears to be the  natural extension of [JW88,W93] to  higher  dimensions.</p>
+
+[JW88] Peter W. Jones and T. Wolff. Hausdorff dimension of harmonic measures in the plane. <i>Acta Math.</i>, 161(1-2):131-144, 1988.<br>
+[L12] John Lewis. $p$-harmonic measure in simply connected domains revisited.<i> Transactions of the American
+Mathematical Society</i>, To appear. <br>
+[W93] T. Wolff. Plane harmonic measures live on sets of $\sigma-$finite length. <i>Ark. Mat.</i>, 31(1):137-172, 1993.
+<br>
+<br>
+<a onclick="document.getElementById('abstract3').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+
+
+<li>
+<b>On the dimension of a certain measure in the plane. </b><br>
+<i><font color="#003366"><b>Ann. Acad. Sci. Fenn. Math.</b></font></i>, <b>39</b> (2014), 187-209.
+[<a href="http://www.acadsci.fi/mathematica/Vol39/Akman.html"><font color="#003366">Published Version</font></a>,
+<a href="http://arxiv.org/abs/1301.5860"><font color="#003366">arXiv</font></a>,
+<a onclick="document.getElementById('abstract2').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, <a href="Aslide.pdf">Slides</a>, <a href="https://www.youtube.com/watch?v=41caP2454D8">Video</a>]
+<div id="abstract2" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+
+\(
+\newcommand{\hd}{\mbox{H-dim}\;}
+\newcommand\rd{\mathrm{d}}
+\)
+
+<p style="width: 700px;"><b>Abstract:</b>
+In this paper we study the Hausdorff dimension of a measure $\Im_{f}$ related to a positive weak solution, $u$, 
+of a certain partial differential equation in $\Omega\cap O$ where $\Omega\subset \mathbb{C}$ is a bounded simply 
+connected domain and $O$ is a neighborhood of $\partial\Omega$. $u$ has continuous boundary value $0$ on $\partial\Omega$ and is a weak solution to 
+\[
+ \sum\limits_{i,j=1}^{2}\frac{\partial}{\partial x_{i}}(f_{\eta_{i}\eta_{j}}(\nabla u(z))\, u_{x_{j}}(z))=0\, \ \mbox{in}\, \ \Omega\cap O.
+\]
+Also $f(\eta)$, $\eta\in\mathbb{C}$ is 
+homogeneous of degree $p$ and $\nabla f$ is $\delta-$monotone on $\mathbb{C}$ for some $\delta > 0$.
+Put $u\equiv 0$ in $N\setminus \Omega$. Then $\Im_{f}$ is the unique positive finite Borel measure with support on $\partial\Omega$ satisfying 
+\[
+\int\limits_{\mathbb{C}}\langle \nabla f(\nabla u(z)), \nabla\phi(z)\rangle \rd A=-\int\limits_{\partial\Omega} \phi(z) \rd\Im_{f}
+\]
+for every $\phi\in C^{\infty}_{0}(O)$. </p>
+
+<p style="width: 700px;">
+We prove that $\hd{\Im_{f}} \geq 1$ when $1 < p \leq 2$ and $\hd{\Im_{f}} \leq 1$ when $2 \leq p < \infty$. 
+Our work generalizes work  of  Lewis and coauthors when the above PDE is the $p$ Laplacian  
+(i.e, $f(\eta)=|\eta|^p$) and also for $p=2$, the well known theorem of Makarov regarding the Hausdorff 
+dimension of harmonic measure relative to a point in $\Omega$.
+</p>
+<a onclick="document.getElementById('abstract2').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+</div>
+</li>
+<br>
+
+<li>
+<b>On the logarithm of the minimizing integrand  for certain variational problems in two dimensions. </b><br>
+(with <a href="http://www.ms.uky.edu/~johnl">
+John Lewis</a> and <a href="http://thecollege.syr.edu/people/faculty/pages/math/vogel-andrew.html">Andrew Vogel</a>), 
+<br>
+<i><font color="#003366"><b>Anal. Math. Phys.</b></font>, March 2012, Volume 2, Issue 1, pp 79-88</i>.
+[<a href="http://link.springer.com/article/10.1007%2Fs13324-012-0023-8"><font color="#003366">Published Version</font></a>,
+<a onclick="document.getElementById('abstract1').style.display='';return false;"
+href="" style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Abstract</font></a>, <a href="ALVfslide.pdf">Slides</a>]
+<div id="abstract1" style="display:none;width: 700px;margin:5px 20px 10px 5px;padding:5px;border:1px solid #aaa;">
+<p style="width: 700px;"><b>Abstract:</b>
+Let $f$ be a smooth convex homogeneous function of degree $p$, $1 < p < \infty$, on $\mathbb{C} \setminus \{ 0 \}$. 
+We show that if $u$ is a minimizer for the 
+functional whose integrand is $f(\nabla v)$, $v$ in a certain subclass of the 
+Sobolev space $W^{1,p}(\Omega)$, $\nabla u\neq 0$ at $z\in\Omega$, and $v=\log f(\nabla u)$ then in a neighborhood of $z$, 
+\[
+Lv \geq 0 (Lv \leq 0) \, \, \, \mbox{when} \, \, \, p \geq 2(p \leq 2)
+\]	
+where
+\[
+L \zeta = \sum \limits_{j,k = 1}^{2}\frac{\partial }{\partial x_{k}}\left( f_{\eta_{k}\eta_{j}}\frac{\partial \zeta}{\partial x_{j}}\right).
+\]
+We then indicate the importance of this fact in previous work of the authors when $f( \eta ) = |\eta|^{p}$ 
+and indicate possible future generalizations of this work in which this fact will play a fundamental role. </p>
+<a onclick="document.getElementById('abstract1').style.display='none';return false;" href=""
+style="text-decoration:none;border-bottom:1px dotted blue;"><font color="#003366">Hide Abstract</font></a>
+
+</li>
+</ul>
+
+
+<li><h3>Research Interests</h3></li>
+<p>
+My research lies in the interface of Analysis, Partial Differential Equations, Potential Theory, and Geometric Measure Theory. 
+My interests are
+<ol>
+  <li> Variational methods for quasi-linear elliptic PDEs.</li>
+  <li> Regularity and free boundary regularity for quasi-linear elliptic PDEs in non-smooth domains. </li>
+  <li> Conformal densities and metric properties of harmonic, $p$-harmonic, and elliptic measures.</li>
+  <li> Brunn-Minkowski type inequalities associated to quasi-linear elliptic PDEs and stability of these inequalities.</li>
+  <li> Minkowski type problems associated to quasi-linear elliptic PDEs.</li>
+</ol>
+<p>
+I defended my thesis in May 2014.  Title:<i><a href="http://uknowledge.uky.edu/math_etds/12/">
+On the Hausdorff dimension of a certain measure arising from a positive weak solution to a divergence type PDE.</a></i>
+
+
+<li><h3>Teaching <font color="#808080", size="3">Autumn 2019</font><a href="https://www.essex.ac.uk/people/akman65308/murat-akman#teaching"><font size="3"> My current teaching</a></font>
+</h3></li>
+<ul style="list-style-type:disc;">
+   <li> Autumn 2021: <a href="https://moodle.essex.ac.uk/course/view.php?id=5027">MA302-6-AU</a> - Complex Variables and Applications at Essex</li> 
+  <li> Spring 2020: <a href="https://moodle.essex.ac.uk/course/view.php?id=5027">MA105-4-SP</a> - Applied Mathematics (University Physics) at Essex</li> 
+ <li> Spring 2020: <a href="https://moodle.essex.ac.uk/course/view.php?id=5027">MA202-5-SP</a> - Differential Equations at Essex</li> 
+<li> Autumn 2019: <a href="https://moodle.essex.ac.uk/course/view.php?id=5027">MA225-6-AU</a> - Quantum Mechanics at Essex</li>
+<li> Spring 2019: <a href="math3435s18/index.html">Math 3150</a> - Analysis I at UConn</li>
+<li> Fall 2018: <a href="math2410f18/index.html">Math 2410</a> - Elementary Differential Equations at UConn</font>
+ & <a href="math3150f18/index.html"><font size="3">Math 3150</a> - Analysis I at UConn</font></li>
+<li> Spring 2018: <a href="math3435s18/index.html">Math 3435</a> - Partial Differential Equations at UConn</li>
+<li> Fall 2017: <a href="math3410f17/index.html">Math 3410</a> - Differential Equations for Applications at UConn</li>
+</ul>
+
+
+<li><h3>Seminar & Conference Organizing</h3></li>
+
+
+<ul style="list-style-type:square">
+<li> I will co-organize (with <a href="https://www.essex.ac.uk/people/papam01307/georgios-papamikos"> Georgios Papamikoss</a>)  a 2-day meeting on <b>Integrability and Analysis of PDEs</b>. This workshop is partially supported by the <a href="https://www.lms.ac.uk/"> <b>London Mathematical Society Scheme 9 Grant</b></a> and by the <a href="https://www.essex.ac.uk/departments/mathematical-sciences"><b>Department of Mathematical Sciences</b></a> of the University of Essex. There will be some funds to support graduate students and postdocs to participate in the workshop. The date will be announced soon. 
+
+<li> I will co-organize (with <a href="https://www.logiqueconsult.eu/">Mirna Dzamonja</a> and <a href="https://sites.google.com/view/marina-iliopoulou/">Marina Iliopoulou</a>) a one-day conference on <b>Mathematics of the Eastern Arc</b> at University of Kent, Canterbury, UK, <b>Postponed</b>. The conference is partially supported by <a href="https://easternarc.ac.uk/"><b>The Eastern Academic Research Consortium</b></a>. <a href="https://sites.google.com/site/mathoftheeasternarc/home">The speaker list.</a></li>
+
+<li> I co-organized (with <a href="https://sites.math.washington.edu/~zhaozh/">Zihui Zhao</a>) the AMS Special section</a> on <b>Regularity theory of PDEs and Calculus of Variations on 
+Domains with Rough Boundaries</b> at University of Connecticut, Hartford, CT  April 13-14, 2019. <a href="rpdecv.html">The speaker list and Slides.</a></li>
+
+<li>  I co-organized (with <a href="http://www.math.uconn.edu/~badger/">Matthew Badger</a> and <a href="https://sites.google.com/site/vyronvellis/">Vyron Vellis</a>) 
+a conference for graduate students: <a href="https://gaha2019.math.uconn.edu/"> Geometric and Harmonic Analysis</a> at UConn, March 29-31, 2019. </li>
+
+<li> I was co-organizer (with <a href="https://sites.google.com/site/vyronvellis/">Vyron Vellis</a>) for the 
+<a href="https://www.math.uconn.edu/research/seminars/analysis-learning-seminar/?Subject=analysislearn&Year=2018&Semester=Spring">
+Analysis Learning Seminar</a> at UConn. </li> 
+
+<li>  I co-organized (with <a href="https://math.mit.edu/~maxe/">Max Engelstein</a>) the <a href="rpde.html">AMS Special section</a> on <b>Regularity of PDEs on Rough Domains</b> at Northeastern University, Boston, MA  April 21-22, 2018. 
+<a href="rpde.html">The speaker list and Slides.</a></li>
+</ul>
+
+
+<li><h3>Past/Upcoming Talks/Visits</h3></li>
+<ul style="list-style-type:square">
+      <li>Interactions between Geometric measure theory, Singular integrals, and PDE,<a href="https://www.him.uni-bonn.de/programs/future-programs/future-trimester-programs/interactions-geometric-singular-pde/participants/">The Hausdorff Research Institute for Mathematics, Bonn</a>, 13 March-26 March 2022. 
+    <li>The PDEs and Applications seminar,<a href="http://www2.math.uu.se/~eriklindgren/seminar/pde.html">Uppsala University</a>, 29 March 2022. 
+  <li> LMS Harmonic Analysis and PDE Research Network,<a href="https://web.mat.bham.ac.uk/analysis/?p=hapde">University of Kent</a>, 14 December 2021. 
+<li> Graduate seminar on Advanced topics in PDE <a href="https://www.math.uni-bonn.de/people/lenka/Seminar_SoSe_2020"> Mathematical Institute
+of the University of Bonn</a>, 12 June 2020. 
+<li> Kent Analysis Seminar, <a href="https://www.kent.ac.uk/mathematics-statistics-actuarial-science"> University of Kent </a>, 10 October 2019.
+<li>Analysis Seminar, <a href="http://web.mat.bham.ac.uk/analysis/?p=sems"> University of Birmingham</a>, 10 December 2019.
+<li>Special session on <b>Real Analysis</b> at the <a href="https://jovenesrsme2020.com/">Congreso de Jóvenes Investigadores de la RSME</a>, 27-31 January 2020 (Conference for the Spanish Mathematical Society for Young Researchers).
+<li> Partial Differential Equations Seminar, <a href="https://www.maths.ox.ac.uk/events/list/682/all"> University of Oxford </a>, 9 March 2020.
+<li>Special session on <b>Elliptic PDEs and Geometric Variational Problems</b> at the <a href="http://www.aimsconference.org/conferences/2020/index.html">13th AIMS  conference on Dynamical Systems, Differential Equations and  Applications</a>, 5-9 June 2020 in Atlanta (postponed to 2021).
+
+<li> A mini-symposium on <b>Regularity of free boundaries</b> at  <a href="https://fbp2020.de/">FBP2020</a>, Humboldt University of Berlin, August 31–September 4, 2020 (postponed to 2021).
+
+
+</ul>
+<br>
+<br>
+<i><span id="lastModified"></span></i>
+</ul>
+</ul>
+
+</div>
+  <div class="column right" style="background-color:#fce2b0;padding-left:0pt;padding-top:80pt;">
+
+<img height="375" src="M1.jpg">
+
+<br>
+
+<p style="width: 325px;"> <a href="akmanCV.pdf">Short CV</a> and 
+<a href="https://scholar.google.com/citations?user=6wnq92oAAAAJ&hl=en"> Google Scholar page</a> and <a href="https://www.essex.ac.uk/people/akman65308/murat-akman">webpage on the university</a>.</p>
+My office: STEM 5.40<br>
+<a href="https://www.essex.ac.uk/departments/mathematical-sciences">Department of Mathematical Sciences</a>, <br>
+Wivenhoe Park, <a href="https://www.essex.ac.uk/">University of Essex</a><br> 
+Colchester CO4 3SQ, United Kingdom <br>
+Email: murat.akman "at" essex.ac.uk<br>
+Office Phone: +44 (0) 1206 873032<br>
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>
