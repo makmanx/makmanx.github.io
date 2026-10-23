@@ -15,6 +15,14 @@
 .portrait-stage{position:relative;width:min(1120px,100%);height:var(--art-size);flex:none;margin:0 auto}
 .portrait-art{position:absolute;left:50%;top:0;transform:translateX(-50%);width:var(--art-size);height:var(--art-size);margin:0}
 .portrait-art img{width:100%;height:100%;object-fit:contain}
+.portrait-reveal{position:relative;display:block;width:100%;height:100%;margin:0;padding:0;border:0;background:none;color:inherit;appearance:none;cursor:pointer;touch-action:manipulation}
+.portrait-reveal:disabled{cursor:default}
+.portrait-reveal:focus-visible{outline:2px solid #e6dac0;outline-offset:5px;border-radius:4px}
+.portrait-art .portrait-silhouette{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .65s ease-out}
+.portrait-art.is-silhouette .portrait-silhouette{opacity:1;transition-duration:4s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
+.portrait-reveal-hint{position:absolute;bottom:3%;left:50%;display:flex;align-items:center;gap:9px;transform:translateX(-50%);padding:5px 10px;border:1px solid #879b8e77;border-radius:20px;background:#202c29e6;color:#e6dac0;font:11px/1.4 var(--sans,system-ui,sans-serif);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.portrait-reveal-hint>span{color:#adc8b6}
+.portrait-art.is-silhouette .portrait-reveal-hint{opacity:1;transition-delay:3.5s}
 .portrait-navigation{position:absolute;inset:0;pointer-events:none}
 .portrait-link{position:absolute;display:flex;align-items:center;justify-content:space-between;gap:20px;width:171px;min-height:49px;padding:12px 17px;border:1px solid #839686;border-radius:3px;background:#27312bea;box-shadow:0 8px 22px #0002;color:#f3e8cb;font-size:15px;font-weight:500;letter-spacing:.1px;line-height:1.5;transform:translateY(-50%);pointer-events:auto;transition:background .2s,color .2s,border-color .2s,box-shadow .2s;z-index:2}
 .portrait-link::before,.portrait-link::after{content:'';position:absolute;pointer-events:none;transition:background .2s,border-color .2s}
@@ -74,7 +82,7 @@
   .portrait-continue{margin-top:17px}
 }
 @media(max-width:740px) and (max-height:650px){.portrait-landing{padding-top:12px;padding-bottom:12px;--art-size:min(480px,calc(100vw - 32px),calc(100svh - 255px))}.portrait-kicker.eyebrow{margin-bottom:12px}.portrait-footer{gap:9px;margin-top:12px}.portrait-continue{display:none}}
-@media(prefers-reduced-motion:reduce){.portrait-link,.portrait-link::before,.portrait-link::after,.portrait-arrow,.portrait-footer>a{transition:none}}
+@media(prefers-reduced-motion:reduce){.portrait-link,.portrait-link::before,.portrait-link::after,.portrait-arrow,.portrait-footer>a,.portrait-art .portrait-silhouette,.portrait-art.is-silhouette .portrait-silhouette,.portrait-reveal-hint{transition:none}.portrait-reveal-hint{display:none}}
 
 /* Keep the full menu one click away only on compact screens. */
 @media(min-width:960px){
