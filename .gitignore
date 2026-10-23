@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+
+# Local originals and retired site files
+/index_old.html
+/M1.jpg
+/M12.jpg
+/Essex.png
+/_config.yml

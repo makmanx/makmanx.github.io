@@ -1,0 +1,85 @@
+/* A portrait-led entrance. Link labels sit outside the mathematical artwork. */
+.portrait-home .site-header{--header-height:64px;height:64px;background:#202124;color:#eee7d5;border-bottom:1px solid #39403b;backdrop-filter:none}
+.portrait-home .site-header .brand{font-size:14px;gap:16px}
+.portrait-home .site-header .monogram span{color:#adc8b6}
+.portrait-home .site-header .nav-toggle{display:flex;align-items:center;gap:14px;padding:8px 0 8px 15px;background:none;border:0;color:#dddccf;font-size:12px}
+.portrait-home .site-header .nav-toggle>span{font-size:15px}
+.portrait-home .site-header nav{display:none;position:absolute;left:auto;right:max(24px,calc((100vw - 1200px)/2));top:63px;width:230px;flex-direction:column;align-items:stretch;gap:0;padding:13px 20px 17px;background:#26302b;border:1px solid #596d5e;box-shadow:0 16px 35px #0004}
+.portrait-home .site-header nav.open{display:flex}
+.portrait-home .site-header nav a,.portrait-home .site-header nav a:last-child{font-size:13px;color:#eee7d5;padding:11px 2px;border-bottom:1px solid #465348}
+.portrait-home .site-header nav a::after{display:none}
+.portrait-home .site-header nav a:hover{color:#fff8e5}
+.portrait-home .site-header a:focus-visible,.portrait-home .site-header button:focus-visible{outline-color:#e6dac0}
+.portrait-landing{--art-size:min(630px,calc(100svh - 245px),calc(100vw - 430px));display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:calc(100svh - 64px);padding:16px 20px 15px;background:#202124;color:#eee8d7;isolation:isolate;overflow:hidden}
+.portrait-kicker.eyebrow{font-size:11px;line-height:1.6;letter-spacing:2.1px;color:#b4c7bb;margin:0 0 11px;text-align:center}
+.portrait-stage{position:relative;width:min(1120px,100%);height:var(--art-size);flex:none;margin:0 auto}
+.portrait-art{position:absolute;left:50%;top:0;transform:translateX(-50%);width:var(--art-size);height:var(--art-size);margin:0}
+.portrait-art img{width:100%;height:100%;object-fit:contain}
+.portrait-navigation{position:absolute;inset:0;pointer-events:none}
+.portrait-link{position:absolute;display:flex;align-items:center;justify-content:space-between;gap:20px;width:171px;min-height:49px;padding:12px 17px;border:1px solid #839686;border-radius:3px;background:#27312bea;box-shadow:0 8px 22px #0002;color:#f3e8cb;font-size:15px;font-weight:500;letter-spacing:.1px;line-height:1.5;transform:translateY(-50%);pointer-events:auto;transition:background .2s,color .2s,border-color .2s,box-shadow .2s;z-index:2}
+.portrait-link::before,.portrait-link::after{content:'';position:absolute;pointer-events:none;transition:background .2s,border-color .2s}
+.portrait-link::after{height:1px;width:57px;background:#a0b49a;opacity:.8;top:50%}
+.portrait-link::before{width:5px;height:5px;border:1px solid #d9cba8;background:#d9cba8;border-radius:50%;top:calc(50% - 2px)}
+.portrait-link--research,.portrait-link--teaching,.portrait-link--about{right:calc(50% + var(--art-size)/2 + 28px)}
+.portrait-link--research::after,.portrait-link--teaching::after,.portrait-link--about::after{left:100%}
+.portrait-link--research::before,.portrait-link--teaching::before,.portrait-link--about::before{left:calc(100% + 55px)}
+.portrait-link--publications,.portrait-link--activities,.portrait-link--contact{left:calc(50% + var(--art-size)/2 + 28px)}
+.portrait-link--publications::after,.portrait-link--activities::after,.portrait-link--contact::after{right:100%}
+.portrait-link--publications::before,.portrait-link--activities::before,.portrait-link--contact::before{right:calc(100% + 55px)}
+.portrait-link--research,.portrait-link--publications{top:22%}
+.portrait-link--teaching,.portrait-link--activities{top:46%}
+.portrait-link--about,.portrait-link--contact{top:70%}
+.portrait-arrow{font-size:15px;color:#b6c9b8;transition:color .2s}
+.portrait-link:hover{background:#e6dac0;border-color:#e6dac0;color:#202a24;box-shadow:0 5px 25px #d7d3b515}
+.portrait-link:hover .portrait-arrow{color:#325448}
+.portrait-link:hover::after{background:#e6dac0}
+.portrait-link:focus-visible{outline:2px solid #f3e8cb;outline-offset:5px;background:#374c3e}
+.portrait-footer{display:flex;align-items:center;justify-content:center;gap:30px;margin-top:6px;font-size:14px;color:#bec8be}
+.portrait-footer p{margin:0}
+.portrait-affiliation{max-width:540px;text-align:center;line-height:1.75}.portrait-affiliation a{color:#e6dac0;text-decoration:underline;text-decoration-color:#829b87;text-underline-offset:3px}.portrait-affiliation a:hover{color:#fff4d8;text-decoration-color:#e6dac0}.portrait-affiliation a:focus-visible{outline-color:#e6dac0}
+
+.portrait-footer p>span{color:#7c927f;margin:0 9px}
+.portrait-footer>a{display:inline-flex;align-items:center;gap:15px;padding:7px 13px;border:1px solid #7a8c7b;border-radius:2px;font-size:13px;color:#e6dac0;transition:border-color .2s,background .2s}
+.portrait-footer>a:hover{border-color:#e6dac0;background:#323d33}
+.portrait-footer>a:focus-visible,.portrait-continue:focus-visible{outline-color:#e6dac0}
+.portrait-continue{display:flex;align-items:center;gap:12px;margin-top:15px;color:#afc1b0;font-size:12px;letter-spacing:.4px}
+.portrait-continue>span{font-size:15px}
+@media(max-width:1050px){.portrait-link{width:155px;font-size:14px;gap:12px;padding-inline:15px}.portrait-landing{--art-size:min(600px,calc(100svh - 245px),calc(100vw - 410px))}}
+@media(max-width:740px){
+  .portrait-home .site-header .shell{width:calc(100% - 40px)}
+  .portrait-home .site-header .brand{font-size:12px;gap:12px}
+  .portrait-home .site-header nav{right:20px;top:63px}
+  .portrait-landing{--art-size:min(480px,calc(100vw - 32px),calc(100svh - 340px));min-height:calc(100svh - 64px);padding:20px 16px 24px}
+  .portrait-kicker.eyebrow{font-size:11px;letter-spacing:1.3px;margin-bottom:20px}
+  .portrait-stage{width:var(--art-size);height:calc(var(--art-size) + 112px)}
+  .portrait-art{top:56px;width:var(--art-size);height:var(--art-size)}
+  .portrait-navigation{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:44px 1fr 44px;gap:12px 8px}
+  .portrait-link{position:relative;left:auto;right:auto;top:auto;transform:none;width:100%;min-height:44px;justify-content:center;gap:0;padding:9px 5px;font-size:12px;letter-spacing:0;box-shadow:0 5px 14px #0002}
+  .portrait-arrow{display:none}
+  .portrait-link--research{grid-column:1;grid-row:1}
+  .portrait-link--publications{grid-column:2;grid-row:1}
+  .portrait-link--teaching{grid-column:3;grid-row:1}
+  .portrait-link--activities{grid-column:1;grid-row:3}
+  .portrait-link--about{grid-column:2;grid-row:3}
+  .portrait-link--contact{grid-column:3;grid-row:3}
+  .portrait-link::after{left:50%;right:auto;width:1px;height:13px}
+  .portrait-link::before{left:calc(50% - 2px);right:auto;width:5px;height:5px}
+  .portrait-link--research::after,.portrait-link--publications::after,.portrait-link--teaching::after{top:100%}
+  .portrait-link--research::before,.portrait-link--publications::before,.portrait-link--teaching::before{top:calc(100% + 12px)}
+  .portrait-link--about::after,.portrait-link--activities::after,.portrait-link--contact::after{top:auto;bottom:100%}
+  .portrait-link--about::before,.portrait-link--activities::before,.portrait-link--contact::before{top:auto;bottom:calc(100% + 12px)}
+  .portrait-footer{flex-direction:column;gap:14px;margin-top:22px;text-align:center;font-size:14px}
+  .portrait-footer p>span{margin-inline:5px}
+  .portrait-footer>a{font-size:13px;padding:7px 16px;min-height:35px}
+  .portrait-continue{margin-top:17px}
+}
+@media(max-width:740px) and (max-height:650px){.portrait-landing{padding-top:12px;padding-bottom:12px;--art-size:min(480px,calc(100vw - 32px),calc(100svh - 255px))}.portrait-kicker.eyebrow{margin-bottom:12px}.portrait-footer{gap:9px;margin-top:12px}.portrait-continue{display:none}}
+@media(prefers-reduced-motion:reduce){.portrait-link,.portrait-link::before,.portrait-link::after,.portrait-arrow,.portrait-footer>a{transition:none}}
+
+/* Keep the full menu one click away only on compact screens. */
+@media(min-width:960px){
+  .portrait-home .site-header .nav-toggle{display:none}
+  .portrait-home .site-header nav,.portrait-home .site-header nav.open{position:static;display:flex;flex-direction:row;align-items:center;gap:28px;width:auto;padding:0;border:0;background:none;box-shadow:none}
+  .portrait-home .site-header nav a,.portrait-home .site-header nav a:last-child{font-size:14px;padding:10px 0;border:0}
+  .portrait-home .site-header nav a:hover,.portrait-home .site-header nav a.current{color:#fff8e5;text-decoration:underline;text-underline-offset:6px}
+}

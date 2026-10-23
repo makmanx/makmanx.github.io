@@ -1,0 +1,47 @@
+/* PDEs @ Essex: original event artwork, shown in full. */
+.essex-events-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.essex-event{min-width:0;display:flex;flex-direction:column}
+.essex-event-figure{display:block;color:var(--teal);cursor:zoom-in}
+.essex-event-image{display:flex;align-items:center;justify-content:center;height:244px;padding:14px;background:#fff;border:1px solid var(--line);transition:border-color .2s,box-shadow .2s}
+.essex-event-image img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
+.essex-event-figure:hover .essex-event-image{border-color:#8ba99a;box-shadow:0 4px 18px #284c3b08}
+.essex-event-zoom{display:flex;align-items:center;justify-content:flex-end;gap:9px;margin-top:7px;color:var(--muted);font-size:12px;line-height:1.6}
+.essex-event-figure:hover .essex-event-zoom{color:var(--teal)}
+.essex-event-body{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:20px 0 22px;border-bottom:1px solid var(--line)}
+.essex-event-date{font-size:12px;font-weight:500;letter-spacing:.9px;text-transform:uppercase;color:var(--teal);margin:0 0 12px}
+.essex-event h3{font:400 clamp(20px,2.15vw,27px)/1.25 var(--serif);letter-spacing:-.65px;margin:0 0 13px}
+.essex-event h3 a:hover{color:var(--teal)}
+.essex-event-topic{font-size:15px;line-height:1.85;color:var(--muted);margin:0 0 22px;max-width:345px}
+.essex-event .text-link{font-size:14px;margin-top:auto}
+.essex-events-intro{font-size:16px;color:var(--muted);margin:0 0 35px;max-width:620px;line-height:1.9}
+.activities-resources{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:45px}
+.activities-resources .activity-links>a{display:block;padding-top:0;padding-bottom:25px}
+.activities-resources .activity-links h3{font-size:27px}
+.essex-series{padding:50px 0 65px;border-bottom:1px solid var(--line)}
+.essex-series-heading{margin-bottom:32px}
+.essex-series-heading .eyebrow{margin:0 0 14px}
+.essex-series-heading h2{font:400 clamp(32px,4vw,49px)/1.15 var(--serif);letter-spacing:-1.5px;margin:0 0 18px}
+.essex-series-heading>p:last-child{font-size:16px;line-height:1.85;color:var(--muted);max-width:650px;margin:0}
+.academic-page .essex-event h3{font-size:clamp(20px,2.15vw,27px);line-height:1.25;letter-spacing:-.65px}
+.academic-page .essex-event h3 a{text-decoration:none}
+.academic-page .essex-event-topic{font-size:15px}
+.academic-page .essex-event .text-link{font-size:14px;font-weight:500}
+.essex-series-note{font-size:14px;line-height:1.9;color:var(--muted);max-width:850px;margin:28px 0 0}
+.essex-series-note a{color:var(--teal);text-decoration:underline;text-underline-offset:3px;text-decoration-color:#acbfb1}
+@media(max-width:1000px){.essex-events-grid{gap:22px}.essex-event-image{height:220px;padding:13px}.essex-event-topic{font-size:15px}.essex-event h3{font-size:22px}.academic-page .essex-event h3{font-size:22px}}
+@media(max-width:740px){.essex-events-grid{grid-template-columns:1fr;gap:34px}.essex-event-image{height:276px;padding:18px}.essex-event-image img{max-height:238px}.essex-event h3,.academic-page .essex-event h3{font-size:29px}.essex-event-date{font-size:12px}.essex-event-topic,.academic-page .essex-event-topic{font-size:15px;max-width:100%;margin-bottom:22px}.essex-event-body{padding-top:19px}.essex-event .text-link,.academic-page .essex-event .text-link{font-size:14px}.essex-event-zoom{font-size:12px}.essex-events-intro{margin:0 0 28px;font-size:16px}.activities-resources{grid-template-columns:1fr;gap:29px;margin-top:40px}.activities-resources .activity-links h3{font-size:27px}.essex-series{padding-top:37px;padding-bottom:44px}.essex-series-heading>p:last-child{font-size:16px}.essex-series-note{font-size:14px;margin-top:24px}}
+@media(prefers-reduced-motion:reduce){.essex-event-image{transition:none}}
+
+.essex-events-heading{font:400 36px/1.2 var(--serif);letter-spacing:-1px;margin:0 0 17px}
+.essex-events-intro a{color:var(--teal);text-decoration:underline;text-underline-offset:3px}
+.upcoming-programme{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;background:#263d35;color:var(--paper);padding:42px;margin-bottom:62px}
+.upcoming-programme .eyebrow{color:#bcd3c4;letter-spacing:1.4px;margin-bottom:18px}
+.upcoming-programme-date{border-right:1px solid #526c5c;padding-right:30px}
+.upcoming-programme-date .programme-year{font:400 68px/1.05 var(--serif);letter-spacing:-2px;color:var(--cream);margin-bottom:16px}
+.upcoming-programme-date>p:last-child{font-size:14px;color:#d0ddd2;margin:0}
+.upcoming-programme h3{font:400 clamp(27px,2.8vw,36px)/1.25 var(--serif);letter-spacing:-.6px;color:#f0e6ce;margin-bottom:20px}
+.upcoming-programme h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.upcoming-programme-copy>p:not(.eyebrow){font-size:16px;color:#d0ddd2;max-width:650px;margin-bottom:23px}
+.upcoming-programme .text-link{color:#eee1bf;border-color:#8fa792;font-size:14px}
+.upcoming-programme a:focus-visible{outline-color:#eee1bf}
+@media(max-width:740px){.upcoming-programme{grid-template-columns:1fr;gap:26px;padding:27px 24px;margin-bottom:44px}.upcoming-programme-date{padding:0 0 22px;border-right:0;border-bottom:1px solid #526c5c}.upcoming-programme-date .programme-year{font-size:48px;margin-bottom:12px}.upcoming-programme h3{font-size:28px}.upcoming-programme-copy>p:not(.eyebrow){font-size:15px}.essex-events-heading{font-size:31px}}

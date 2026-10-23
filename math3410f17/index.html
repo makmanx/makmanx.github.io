@@ -5,13 +5,11 @@ onload = function(){
     document.getElementById("lastModified").innerHTML = "Page last changed " + document.lastModified.split(" ")[0];
 }
 </script>
-<SCRIPT language="JavaScript1.2" src="main.js" type="text/javascript"></SCRIPT>   
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <title>Math 3410, Sections 001 and 002 - Elementary Differential Equations, Fall 2017</title>
 </head>
 <style type="text/css">
@@ -27,8 +25,8 @@ line-height:1.3em;
 Math 3410, Sections 001 and 002 - Elementary Differential Equations, Fall 2017 [<a href="3410f17s.pdf">Course Syllabus</a>]
 <br>
 <br>
-<b>Lectures:</b> MWF 09:05 - 09:55 at LH 201. 
-<br> <b>Office hours:</b> Monday 12:00 - 13:30, Wednesday 12:30 - 14:00 at MONT 304. 
+<b>Lectures:</b> MWF 09:05 - 09:55 at LH 201.
+<br> <b>Office hours:</b> Monday 12:00 - 13:30, Wednesday 12:30 - 14:00 at MONT 304.
 
 <ul>
 <li><h3>Lecture Notes</h3></li>
@@ -88,16 +86,16 @@ Math 3410, Sections 001 and 002 - Elementary Differential Equations, Fall 2017 [
 
 <li><h4>HW2 - Due on <font color="red"> Friday, September 15 by the class</font> | <a href="SHW2.pdf"><font color="purple"> Solution to selected problems (PDF)</font></a></li>
 <ul style="list-style-type:square;">
-<li>Problem 1: Check that if the differential equation is exact $(e^{x}\sin y+e^{-y})dx - (xe^{-y} - e^{x} \cos y) dy= 0$. 
+<li>Problem 1: Check that if the differential equation is exact $(e^{x}\sin y+e^{-y})dx - (xe^{-y} - e^{x} \cos y) dy= 0$.
 If it is exact then solve the differential equation. </li>
-<li>Problem 2: Check that if the differential equation is exact $e^{x}(x+1) dx +(ye^y - xe^x)dy= 0$. 
+<li>Problem 2: Check that if the differential equation is exact $e^{x}(x+1) dx +(ye^y - xe^x)dy= 0$.
 If it is exact then solve the differential equation. </li>
 <li>Problem 3: Let $P(x)=\int p(x) dx$. Show that $e^{P(X)}$ is an integrating factor for the DE <br>
 \[
 y'+p(x) y=q(x).
 \]
 </li>
-<li>Problem 4: Suppose that $a,b,c,e$ are constants such that $ae-bc\neq 0$. Let $m$ and $n$ be arbitrary real numbers. Show that 
+<li>Problem 4: Suppose that $a,b,c,e$ are constants such that $ae-bc\neq 0$. Let $m$ and $n$ be arbitrary real numbers. Show that
 \[
 (ax^{m}y+by^{n+1})dx + (cx^{m+1}+exy^{n})dy=0
 \]
@@ -117,7 +115,7 @@ has an integrating factor $\mu(x,y)=x^{\alpha}y^{\beta}$ for some $\alpha$ and $
 
 </ul>
 
-<li><h4>HW4 - Due on <font color="red"> Wednesday, October 4 by the class</font> Problems are from the <a href="SP1.pdf">Supplementary Problems for Exam 1.</a> Here is 
+<li><h4>HW4 - Due on <font color="red"> Wednesday, October 4 by the class</font> Problems are from the <a href="SP1.pdf">Supplementary Problems for Exam 1.</a> Here is
 <a href="SHW4.pdf"><font color="purple"> Solution to selected problems (PDF)</font></a></li>
 </h4></li>
 <ul style="list-style-type:square;">
@@ -134,20 +132,20 @@ has an integrating factor $\mu(x,y)=x^{\alpha}y^{\beta}$ for some $\alpha$ and $
 </h4></li>
 <ul st</li>
 <ul style="list-style-type:square;">
-<li> Find a power series solution $y(x)$ around the point 
-$x_0=0$ to the differential equation 
+<li> Find a power series solution $y(x)$ around the point
+$x_0=0$ to the differential equation
 \[
 y''+y=0.
 \]
-Verify that the power series solution you found 
-has the form 
+Verify that the power series solution you found
+has the form
 \[
-y(x)=a_0\cos(x)+a_1\sin(x). 
+y(x)=a_0\cos(x)+a_1\sin(x).
 \]
 </li>
-<li> By using the second method find at least first 
-four terms of the power series solution $y(x)$ around 
-the point $x_0=0$ to the differential equation 
+<li> By using the second method find at least first
+four terms of the power series solution $y(x)$ around
+the point $x_0=0$ to the differential equation
 \[
 y''=xy-(y')^2
 \]
@@ -156,23 +154,23 @@ with $y(0)=2$ and $y'(0)=1$ (assume that the solution is analytic around $x_0=0$
 \[
 my''+ky = ay'-b(y')^{3}
 \]
-which models the oscillation of a clarinet reed. 
+which models the oscillation of a clarinet reed.
 Using the second method
-find the first four terms of the power 
-series solution $y(x)$ around $x_0=0$ with 
-$m=k=a=1$ and $b=1/3$ with the initial conditions 
-$y(0)=0$ and $y'(0)=1$.   
+find the first four terms of the power
+series solution $y(x)$ around $x_0=0$ with
+$m=k=a=1$ and $b=1/3$ with the initial conditions
+$y(0)=0$ and $y'(0)=1$.
 Write the first four terms of the solution $y(x)$.  </li>
 <li> Consider the following differential equation
 \[
 y''+4 (y^{2}+1)y'+xy=0.
 \]
-Use the second method to find first 
-four terms of the power series solution 
+Use the second method to find first
+four terms of the power series solution
 \[
 y(x)=\sum\limits_{n=0}^{\infty} a_n x^n
 \]
-around $x_0=0$ with the initial conditions 
+around $x_0=0$ with the initial conditions
 $y(0)=0$ and $y'(0)=1$.  </li>
 
 </ul>
@@ -234,19 +232,19 @@ f(x)=\left\{
 0 &-\pi< x < 0, \\
 x & 0< x< \pi.
 \end{array}
-\right. 
+\right.
 \quad f(x)=f(x+2\pi).
 \]
 <ul style="list-style-type:disc;">
 <li>Find the Fourier series $F(x)$ of $f(x)$. </li>
 <li>Using the first part verify that
 \[
-\frac{\pi}{4}=\sum\limits_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)}. 
+\frac{\pi}{4}=\sum\limits_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)}.
 \]
 </li>
 <li>Using the first part verify also that
 \[
-\frac{\pi^2}{8}=\sum\limits_{n=0}^{\infty} \frac{1}{(2n+1)^{2}}. 
+\frac{\pi^2}{8}=\sum\limits_{n=0}^{\infty} \frac{1}{(2n+1)^{2}}.
 \]
 </li>
 </ul>
@@ -267,7 +265,7 @@ x &0\leq x\leq \frac{1}{2}\pi, \\
 <li> Extend $f(x)$ into an even periodic function with period of $2\pi$ and find its Fourier series $F(x)$. </li>
 <li> Using either the first part or the second part verify that
 \[
-\frac{\pi^{2}}{8}=\sum\limits_{n=1}^{\infty} \frac{1}{(2n-1)^{2}}. 
+\frac{\pi^{2}}{8}=\sum\limits_{n=1}^{\infty} \frac{1}{(2n-1)^{2}}.
 \]
 </li>
 </ul>
@@ -277,7 +275,7 @@ x &0\leq x\leq \frac{1}{2}\pi, \\
 
 <li><h4>HW8 - Due on <font color="red"> Wednesday, November 29 by the class </font><a href="SHW8.pdf"> <font color="purple"> Solution to selected problems (PDF)</font></a></h4></li>
 <ul style="list-style-type:square;">
-<li> 
+<li>
 Problem 1: Consider the following Heat conduction problem
 
 \[
@@ -291,7 +289,7 @@ u(x,0)=3\sin(\pi x)-4\sin(\frac{3\pi x}{2}).
 \]
 
 <ul style="list-style-type:disc;">
-<li> By considering separation of variables $u(x,t)=X(x)T(t)$, rewrite the partial differential equation 
+<li> By considering separation of variables $u(x,t)=X(x)T(t)$, rewrite the partial differential equation
 <br> in terms of two ordinary differential equations in $X$ and $T$ (take arbitrary constant as $-\lambda$).</li>
 <li> Rewrite the boundary values in terms of $X$ and $T$.</li>
 <li> Now choose the boundary values which will not give a non-trivial solution and write the ordinary differential equation corresponding to $X$.</li>
@@ -303,7 +301,7 @@ u(x,0)=3\sin(\pi x)-4\sin(\frac{3\pi x}{2}).
 </li>
 <br>
 
-<li> 
+<li>
 Problem 2: Consider the following Heat conduction problem
 
 \[
@@ -331,7 +329,7 @@ u(x,0)=2\cos(\frac{\pi x}{3}) -4 \cos(\frac{5\pi x}{3}).
 
 <li><h4>HW9 - Due on <strike>Wednesday, December 6</strike>  <font color="red"> Friday, December 8 by the class</font> <a href="SHW9.pdf"> <font color="purple"> Solution to selected problems (PDF)</font></a> </h4></li>
 <ul style="list-style-type:square;">
-<li> 
+<li>
 Problem: Consider the following Wave equation which describes the displacement $u(x, t)$ of a piece of flexible string with the initial boundary
 value problem
 \[
@@ -345,7 +343,7 @@ u(x,0)=0 \quad \mbox{and} \quad u_{t}(x,0)=3\sin(\frac{3\pi x}{5})-10\sin(\frac{
 \]
 
 <ul style="list-style-type:disc;">
-<li> By considering separation of variables $u(x,t)=X(x)T(t)$, rewrite the partial differential equation<br> 
+<li> By considering separation of variables $u(x,t)=X(x)T(t)$, rewrite the partial differential equation<br>
 in terms of two ordinary differential equations in $X$ and $T$.</li>
 <li> Rewrite the boundary values in terms of $X$ and $T$.</li>
 <li> Now choose the boundary values which will not give a non-trivial solution and then rewrite the ordinary differential equation corresponding to $X$.</li>
