@@ -1,8 +1,0 @@
-{
-  "BMCompactCriticalChecked": 579,
-  "BMCompactPotentialChecked": 687,
-  "BMCompactNonlinearChecked": 755,
-  "BMCompactRepresentativeChecked": 930,
-  "BMCompactGradientChecked": 979,
-  "BMCompactUpstreamChecked": 1052
-}
