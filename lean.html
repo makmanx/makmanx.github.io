@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Lean formalizations of supporting results in nonlinear PDEs and potential theory, with source files and verification reports.">
+<meta name="theme-color" content="#202524"><title>Lean formalizations of results | Murat Akman</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/academic.css">
+<script src="assets/app.js" defer></script>
+</head><body class="academic-page">
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header"><div class="shell header-inner">
+<a class="brand" href="index.html" aria-label="Murat Akman home"><span class="monogram" aria-hidden="true">MA</span><span>Murat Akman</span></a>
+<button class="nav-toggle" data-nav-toggle aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">Menu <span aria-hidden="true">☰</span></button>
+<nav id="main-nav" aria-label="Main navigation"><a href="index.html#research">Research</a><a href="index.html#publications">Publications</a><a href="index.html#teaching">Teaching</a><a href="index.html#activities">Activities</a><a href="index.html#contact">Contact</a></nav>
+</div></header>
+<main id="content">
+<section class="academic-hero"><div class="shell">
+<a class="academic-back" href="index.html#research"><span aria-hidden="true">←</span> Back to research</a>
+<p class="eyebrow">Research · Formal verification</p>
+<h1>Lean formalizations of results</h1>
+<p class="academic-lead">Source files and verification reports for supporting results in analysis, nonlinear partial differential equations and potential theory.</p>
+</div></section>
+<div class="academic-content shell">
+<div class="academic-callout">
+<p class="eyebrow">Current project · Partial formalization</p>
+<h2>Brunn–Minkowski inequalities for compact sets</h2>
+<p>This supporting library accompanies the manuscript <code>BM_Compact_Final</code>. <strong>Theorems A, B and C remain unproved in Lean.</strong> The files below contain checked supporting results and clearly scoped foundations.</p>
+<p>Checked snapshot: <time datetime="2026-11-11">11 November 2026</time>. Public release: <time datetime="2026-11-24">24 November 2026</time>.</p>
+<a class="button" href="https://github.com/makmanx/makmanx.github.io/tree/master/formalizations/bm-compact/LeanProject">Browse Lean sources <span aria-hidden="true">↗</span></a>
+</div>
+<section class="academic-section" aria-labelledby="downloads-title">
+<div class="academic-section-heading"><p class="eyebrow">Files</p><h2 id="downloads-title">Sources and report</h2><p>The source archive includes the pinned Lean project, an audit and instructions for reproducing the checks.</p></div>
+<ul class="academic-resources">
+<li class="academic-resource"><a href="formalizations/bm-compact/BM_Compact_Lean_Sources.zip" download>Download Lean source project (.zip) <span aria-hidden="true">↓</span></a></li>
+<li class="academic-resource"><a href="formalizations/bm-compact/verification-report.pdf">Read the public verification report (.pdf) <span aria-hidden="true">↗</span></a></li>
+<li class="academic-resource"><a href="https://github.com/makmanx/makmanx.github.io/blob/master/formalizations/bm-compact/LeanProject/README.md">Build instructions and exact scope <span aria-hidden="true">↗</span></a></li>
+</ul>
+</section>
+<section class="academic-section" aria-labelledby="checked-title">
+<div class="academic-section-heading"><p class="eyebrow">Supporting library</p><h2 id="checked-title">What is established</h2><p>The snapshot contains 255 mathematical source modules and six auxiliary audit modules. Its 1,052 counted supporting declarations include eight attributed existing proofs. These counts are not percentages of manuscript coverage.</p></div>
+<div><ul>
+<li>Interior continuous representatives for actual constant-source weak solutions for every <i>p</i> &gt; 1 and dimension <i>n</i> ≥ 2.</li>
+<li>Smooth representatives in the linear case <i>p</i> = 2, including dimension two.</li>
+<li>Variational, Sobolev, comparison and capacity foundations with their stated boundary and exponent restrictions.</li>
+<li>Weak exterior Green-function existence for <i>p</i> &gt; <i>n</i> and every nonempty compact set, with continuous zero boundary values and a bounded canonical-profile remainder.</li>
+</ul>
+<p>General nonlinear gradient Hölder regularity, general critical-point viscosity comparison, critical <i>p</i> = <i>n</i> Green existence, finite asymptotic constants and the remaining arguments for A, B and C are open in this release.</p></div>
+</section>
+<section class="academic-section" aria-labelledby="checking-title">
+<div class="academic-section-heading"><p class="eyebrow">Reproducibility</p><h2 id="checking-title">Checking the formal statements</h2><p>The project is pinned to Lean 4.33.1 and an exact Mathlib commit. Its audit accepts only the standard logical axioms and rejects <code>sorryAx</code> or custom mathematical axioms. Hosting the files on GitHub makes them available; the Lean kernel checks the proofs when the project is built.</p></div>
+<p>The development used AI assistance. Matching a formal statement to its intended mathematical meaning remains a separate review task. This release does not claim independent human mathematical review or complete formal verification of the manuscript.</p>
+</section>
+</div></main>
+<footer class="academic-footer"><div class="shell"><p>Murat Akman <span>University of Essex</span></p><div><a href="index.html#contact">Get in touch</a><a href="index.html">Homepage <span aria-hidden="true">↗</span></a></div></div></footer>
+</body></html>

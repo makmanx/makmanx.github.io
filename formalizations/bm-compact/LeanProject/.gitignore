@@ -1,0 +1,13 @@
+.lake/
+.elan/
+__pycache__/
+ReproductionLogs/
+*.olean
+*.ilean
+*.ir
+*.o
+*.a
+*.so
+*.dylib
+*.pyc
+.DS_Store
