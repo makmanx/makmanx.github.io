@@ -2,7 +2,7 @@
 
 A complete, zero-`sorry`, axiom-audited Lean 4 formalization of the main Brunn–Minkowski and potential-comparison theorems from:
 
-> **Murat Akman**, *Brunn–Minkowski inequality for $p$-capacity of compact sets* (`BM_Compact_Final.tex`), Department of Mathematical Sciences, University of Essex.
+> *Brunn–Minkowski inequality for $p$-capacity of compact sets* ([https://arxiv.org/abs/2610.28421](https://arxiv.org/abs/2610.28421))
 
 All main theorems are proved for **all exponents $1 < p < \infty$** and **all dimensions $n \ge 2$** using only the standard Lean 4 / Mathlib axioms (`[propext, Classical.choice, Quot.sound]`), with **zero `sorry`s** and **zero custom axioms**.
 
