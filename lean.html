@@ -22,29 +22,29 @@
 </div></section>
 <div class="academic-content shell">
 <div class="academic-callout">
-<p class="eyebrow">Current project · Partial formalization</p>
-<h2>Brunn–Minkowski inequalities for compact sets</h2>
-<p>This supporting library accompanies the manuscript <code>BM_Compact_Final</code>. <strong>Theorems A, B and C remain unproved in Lean.</strong> The files below contain checked supporting results and clearly scoped foundations.</p>
-<p>Checked snapshot: <time datetime="2026-11-11">11 November 2026</time>. Public release: <time datetime="2026-11-24">24 November 2026</time>.</p>
-<a class="button" href="https://github.com/makmanx/makmanx.github.io/tree/master/formalizations/bm-compact/LeanProject">Browse Lean sources <span aria-hidden="true">↗</span></a>
+<p class="eyebrow">Current project · Complete main-theorem formalization</p>
+<h2>Brunn–Minkowski inequalities for <i>p</i>-capacity of compact sets</h2>
+<p>This Lean 4 library accompanies the preprint <em>Brunn–Minkowski inequality for p-capacity of compact sets</em> (<a href="https://arxiv.org/abs/2610.28421">arXiv:2610.28421</a>). <strong>Theorems A(a), A(c), B(c), C(a), C(b), C(c), Proposition 4.8 (<code>prop7.3</code>), Lemma 4.7 (<code>lem7.2</code>), and Lemma 3.6 (<code>lem3.7</code>) are completely formalized in Lean 4</strong> for all exponents 1 &lt; <i>p</i> &lt; ∞ and dimensions <i>n</i> ≥ 2, with zero <code>sorry</code>s and only standard logical axioms (<code>propext</code>, <code>Classical.choice</code>, <code>Quot.sound</code>).</p>
+<p>Verified release: <time datetime="2026-11-25">25 November 2026</time> · 329 Lean modules · Lean 4.33.1.</p>
+<a class="button" href="https://github.com/makmanx/makmanx.github.io/tree/master/formalizations/bm-compact">View Lean 4 formalization on GitHub <span aria-hidden="true">↗</span></a>
 </div>
 <section class="academic-section" aria-labelledby="downloads-title">
-<div class="academic-section-heading"><p class="eyebrow">Files</p><h2 id="downloads-title">Sources and report</h2><p>The source archive includes the pinned Lean project, an audit and instructions for reproducing the checks.</p></div>
+<div class="academic-section-heading"><p class="eyebrow">Repository</p><h2 id="downloads-title">Sources and axiom audit</h2><p>The folder below contains the full pinned Lean 4 / Lake project, theorem-to-declaration table, and single-entry axiom audit.</p></div>
 <ul class="academic-resources">
-<li class="academic-resource"><a href="formalizations/bm-compact/BM_Compact_Lean_Sources.zip" download>Download Lean source project (.zip) <span aria-hidden="true">↓</span></a></li>
-<li class="academic-resource"><a href="formalizations/bm-compact/verification-report.pdf">Read the public verification report (.pdf) <span aria-hidden="true">↗</span></a></li>
-<li class="academic-resource"><a href="https://github.com/makmanx/makmanx.github.io/blob/master/formalizations/bm-compact/LeanProject/README.md">Build instructions and exact scope <span aria-hidden="true">↗</span></a></li>
+<li class="academic-resource"><a href="https://github.com/makmanx/makmanx.github.io/tree/master/formalizations/bm-compact">Browse Lean 4 sources on GitHub (329 modules) <span aria-hidden="true">↗</span></a></li>
+<li class="academic-resource"><a href="https://github.com/makmanx/makmanx.github.io/blob/master/formalizations/bm-compact/Prop73AndTheorems.lean">Main theorems: Prop73AndTheorems.lean <span aria-hidden="true">↗</span></a></li>
+<li class="academic-resource"><a href="https://github.com/makmanx/makmanx.github.io/blob/master/formalizations/bm-compact/AxiomAudit.lean">Complete axiom audit: AxiomAudit.lean <span aria-hidden="true">↗</span></a></li>
+<li class="academic-resource"><a href="https://github.com/makmanx/makmanx.github.io/blob/master/formalizations/bm-compact/README.md">Build instructions and theorem index <span aria-hidden="true">↗</span></a></li>
 </ul>
 </section>
 <section class="academic-section" aria-labelledby="checked-title">
-<div class="academic-section-heading"><p class="eyebrow">Supporting library</p><h2 id="checked-title">What is established</h2><p>The snapshot contains 255 mathematical source modules and six auxiliary audit modules. Its 1,052 counted supporting declarations include eight attributed existing proofs. These counts are not percentages of manuscript coverage.</p></div>
+<div class="academic-section-heading"><p class="eyebrow">Formalized results</p><h2 id="checked-title">What is established</h2><p>All main theorems below are checked by the Lean 4.33.1 kernel with zero <code>sorry</code>s and standard axioms only.</p></div>
 <div><ul>
-<li>Interior continuous representatives for actual constant-source weak solutions for every <i>p</i> &gt; 1 and dimension <i>n</i> ≥ 2.</li>
-<li>Smooth representatives in the linear case <i>p</i> = 2, including dimension two.</li>
-<li>Variational, Sobolev, comparison and capacity foundations with their stated boundary and exponent restrictions.</li>
-<li>Weak exterior Green-function existence for <i>p</i> &gt; <i>n</i> and every nonempty compact set, with continuous zero boundary values and a bounded canonical-profile remainder.</li>
-</ul>
-<p>General nonlinear gradient Hölder regularity, general critical-point viscosity comparison, critical <i>p</i> = <i>n</i> Green existence, finite asymptotic constants and the remaining arguments for A, B and C are open in this release.</p></div>
+<li><strong>Theorem A(a) &amp; A(c)</strong>: Brunn–Minkowski inequalities for variational <i>p</i>-capacity (1 &lt; <i>p</i> &lt; <i>n</i>) and supercritical Green capacity (<i>p</i> &gt; <i>n</i>) of arbitrary nonempty compact sets in ℝ<sup><i>n</i></sup>, <i>n</i> ≥ 2.</li>
+<li><strong>Theorem B(c)</strong>: Brunn–Minkowski inequality for the critical outer capacity (<i>p</i> = <i>n</i> ≥ 2) of arbitrary nonempty compact sets.</li>
+<li><strong>Theorem C(a), C(b), C(c)</strong>: Pointwise capacitary and Green's-function min/max comparisons for <i>p</i>-regular sets and outer regularizations across all 1 &lt; <i>p</i> &lt; ∞, <i>n</i> ≥ 2.</li>
+<li><strong>Nonlinear viscosity engine</strong>: Alexandrov's theorem (from Rademacher + Minty resolvent), local Jensen's lemma, JLM viscosity comparison (Lemma 3.6 / <code>lem3.7</code>), nonlinear sup-min envelope viscosity subsolution (Lemma 4.7 / <code>lem7.2</code>), and Proposition 4.8 (<code>prop7.3</code>).</li>
+</ul></div>
 </section>
 <section class="academic-section" aria-labelledby="checking-title">
 <div class="academic-section-heading"><p class="eyebrow">Reproducibility</p><h2 id="checking-title">Checking the formal statements</h2><p>The project is pinned to Lean 4.33.1 and an exact Mathlib commit. Its audit accepts only the standard logical axioms and rejects <code>sorryAx</code> or custom mathematical axioms. Hosting the files on GitHub makes them available; the Lean kernel checks the proofs when the project is built.</p></div>

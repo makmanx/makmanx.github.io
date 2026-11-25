@@ -21,6 +21,10 @@
       {
         "label": "PDF",
         "url": "https://arxiv.org/pdf/2610.28421"
+      },
+      {
+        "label": "Lean 4 formalization",
+        "url": "https://github.com/makmanx/makmanx.github.io/tree/master/formalizations/bm-compact"
       }
     ],
     "abstract": "We prove the capacitary Brunn-Minkowski inequality for arbitrary nonempty compact sets in $\\mathbb R^n$, $n\\geq2$, and every $1<p<\\infty$, with no assumption of convexity, connectedness, interior, or boundary regularity. For $1<p<n$ the inequality is for the variational $p$-capacity.\n\nFor $p>n$ it is for the capacity determined by the constant term at infinity of the normalized $p$-harmonic Green's function with pole at infinity, and for $p=n$ for an outer regularization of this quantity, which agrees with it for $n$-regular sets and in the plane is a constant multiple of logarithmic capacity. In particular, it holds for Newtonian capacity of all compact sets in $\\mathbb R^n$, $n\\geq3$, and for logarithmic capacity of all planar compact sets.\n\nPreviously these inequalities were known for convex sets and, for logarithmic capacity, for planar continua. When both capacities are positive, equality holds for $0<\\lambda<1$ if and only if the filled sets, obtained by adjoining the bounded components of the complement, are convex and equal up to translation and dilation. This characterization is new for nonconvex sets, even for Newtonian and logarithmic capacity."
